@@ -27,6 +27,15 @@
   padding: 0;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0f0f0f;
+}
+
 ul {
   padding: 0;
   list-style-type: none;
@@ -39,4 +48,104 @@ a {
 hr {
   border: 0;
   border-top: 1px dotted #efefef;
+}
+
+h1 {
+  color: #e7e7e7;
+  text-align: center;
+  font-family: Tanker;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.06rem;
+}
+
+/* styles.css */
+@keyframes blobAnimation {
+  0%,
+  100% {
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    border-radius: 60%;
+    transform: translate(-45%, -45%);
+  }
+  50% {
+    border-radius: 70%;
+    transform: translate(-40%, -40%);
+  }
+  75% {
+    border-radius: 60%;
+    transform: translate(-45%, -45%);
+  }
+}
+
+.blob {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(90deg, #de6161 0%, #2657eb 100%);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: blobAnimation 10s infinite ease-in-out;
+}
+
+@keyframes fluid {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.fluid {
+  animation: blobAnimation 4s infinite ease-in-out;
+}
+
+.hero-bg {
+  animation: fluid 8s ease-in-out infinite;
+  background: linear-gradient(90deg, #de6161 0%, #2657eb 100%);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  height: 35rem;
+  position: absolute;
+  transition: all s ease-in-out;
+  width: 35rem;
+}
+
+.blur {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  background: rgba(217, 217, 217, 0.01);
+  backdrop-filter: blur(50px);
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .blob {
+    width: 50px;
+    height: 50px;
+    animation: blobAnimation 10s infinite ease-in-out;
+  }
+
+  .fluid {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .hero-bg {
+    height: 25rem;
+    width: 25rem;
+  }
 }
