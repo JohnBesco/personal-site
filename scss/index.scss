@@ -91,7 +91,7 @@
 
 .img-container {
   justify-self: center;
-  align-self: flex-end;
+  align-self: center;
   grid-column: 2/3;
   background-image: url(/assets/hero-img.webp);
   -webkit-animation: morph 8s ease-in-out infinite;
@@ -132,10 +132,12 @@
 
   h1:nth-child(1) {
     text-align: right;
+    margin-right: -0.6em;
   }
 
   h1:nth-child(3) {
     text-align: left;
+    margin-left: -0.6em;
   }
 
   h2 {
@@ -158,8 +160,8 @@
 
 @media screen and (max-width: 768px) {
   .img-container {
-    height: 8rem;
-    width: 8rem;
+    height: 6rem;
+    width: 6rem;
   }
 
   .blob {
@@ -178,11 +180,29 @@
     width: 15rem;
   }
 
-  .title-wrapper > h1 {
-    font-size: $fs-500;
-  }
+  .title-wrapper {
+    h1 {
+      font-size: $fs-500;
+    }
 
-  .title-wrapper > h2 {
-    font-size: $fs-sm;
-  }
+    h1:nth-child(1) {
+      text-align: right;
+      margin-right: -0.8em;
+    }
+  
+    h1:nth-child(3) {
+      text-align: left;
+      margin-left: -0.8em;
+    }
+
+    h2 {
+      font-size: $fs-sm;
+    }
+
+    p{
+      font-size: $fs-sm;
+      width: 12rem;
+    }
+  } 
+  
 }

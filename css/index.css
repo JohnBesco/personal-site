@@ -148,7 +148,7 @@ p {
 
 .img-container {
   justify-self: center;
-  align-self: flex-end;
+  align-self: center;
   grid-column: 2/3;
   background-image: url(/assets/hero-img.webp);
   -webkit-animation: morph 8s ease-in-out infinite;
@@ -187,9 +187,11 @@ p {
 }
 .title-wrapper h1:nth-child(1) {
   text-align: right;
+  margin-right: -0.6em;
 }
 .title-wrapper h1:nth-child(3) {
   text-align: left;
+  margin-left: -0.6em;
 }
 .title-wrapper h2 {
   justify-self: center;
@@ -209,8 +211,8 @@ p {
 
 @media screen and (max-width: 768px) {
   .img-container {
-    height: 8rem;
-    width: 8rem;
+    height: 6rem;
+    width: 6rem;
   }
   .blob {
     width: 50px;
@@ -225,10 +227,22 @@ p {
     height: 15rem;
     width: 15rem;
   }
-  .title-wrapper > h1 {
+  .title-wrapper h1 {
     font-size: 2.25rem;
   }
-  .title-wrapper > h2 {
+  .title-wrapper h1:nth-child(1) {
+    text-align: right;
+    margin-right: -0.8em;
+  }
+  .title-wrapper h1:nth-child(3) {
+    text-align: left;
+    margin-left: -0.8em;
+  }
+  .title-wrapper h2 {
     font-size: 1rem;
+  }
+  .title-wrapper p {
+    font-size: 1rem;
+    width: 12rem;
   }
 }
