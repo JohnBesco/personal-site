@@ -157,6 +157,11 @@
     width: 25rem;
     font-size: $fs-400;
   }
+
+  button {
+    justify-self: center;
+    grid-column: 2 / 3;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -190,7 +195,7 @@
       text-align: right;
       margin-right: -0.8em;
     }
-  
+
     h1:nth-child(3) {
       text-align: left;
       margin-left: -0.8em;
@@ -200,9 +205,9 @@
       font-size: $fs-sm;
     }
 
-    p{
+    p {
       font-size: $fs-sm;
       width: 12rem;
     }
-  } 
+  }
 }
