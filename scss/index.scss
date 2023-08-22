@@ -85,8 +85,8 @@
 .blur {
   width: 100vw;
   height: 100vh;
-  background: rgba(217, 217, 217, 0.01);
-  backdrop-filter: blur(50px);
+  background: rgba(13, 13, 13, 0.3);
+  backdrop-filter: blur(60px);
   z-index: 1;
 }
 
