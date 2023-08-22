@@ -106,6 +106,7 @@
   width: 15rem;
   position: relative;
   margin: 1em;
+  z-index: 3;
 }
 
 @keyframes morph {
@@ -163,7 +164,90 @@
   button {
     justify-self: center;
     grid-column: 2 / 3;
+    margin-top: 0.4em;
   }
+}
+
+/* overlay  */
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
+/* toggle btn */
+
+#toggle-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+.btn-outline {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 0.5px solid $primary-color;
+}
+
+.btn-outline-1 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 4s linear infinite;
+}
+
+.btn-outline-2 {
+  border-radius: 53% 47% 43% 57% / 51% 39% 61% 49%;
+}
+
+#hamburger {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  z-index: 1000;
+}
+
+#hamburger span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 24px;
+  height: 1.25px;
+  background: $primary-color;
+  transition: transform 0.25s;
+}
+
+#hamburger span::before {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  content: " ";
+  width: 18px;
+  height: 1.25px;
+  background: $primary-color;
+  transform: translateY(-4px);
+  transition: transform 0.25s;
+}
+
+#hamburger.active span {
+  transform: rotate(45deg);
+}
+
+#hamburger.active span::before {
+  top: unset;
+  width: 24px;
+  transform: rotate(-90deg);
 }
 
 @media screen and (max-width: 768px) {
@@ -218,8 +302,8 @@
     button {
       width: 10rem;
       height: 2rem;
-      flex-shrink: 0;
       font-size: $fs-sm;
+      margin-top: 1.2em;
     }
   }
 }
