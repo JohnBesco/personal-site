@@ -1,0 +1,14 @@
+button {
+  border: $border-base-thickness $accent-color;
+  border-radius: 5px;
+  color: $secondary-color;
+  font-family: "Erode-Variable";
+  padding: $padding-base;
+  background-color: $light-bg-color;
+  font-size: $fs-sm;
+}
+
+button:hover {
+  box-shadow: $hover-box-shadow;
+  color: $primary-color;
+}

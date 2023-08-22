@@ -72,6 +72,21 @@ p {
   line-height: normal;
 }
 
+button {
+  border: 1px solid #92d0fc;
+  border-radius: 5px;
+  color: #dbdbdb;
+  font-family: "Erode-Variable";
+  padding: 0.5rem 1.7rem 0.5rem 1.7rem;
+  background-color: #18181B;
+  font-size: 1rem;
+}
+
+button:hover {
+  box-shadow: 0px 0px 0.3360468745px 0px #92d0fc, 0px 0px 0.672093749px 0px #92d0fc, 0px 0px 2.3523280621px 0px #92d0fc, 0px 0px 4.7046561241px 0px #92d0fc, 0px 0px 8.0651254654px 0px #92d0fc, 0px 0px 14.1139688492px 0px #92d0fc;
+  color: #e7e7e7;
+}
+
 /* Background Blob Motion */
 @keyframes blobAnimation {
   0%, 100% {
