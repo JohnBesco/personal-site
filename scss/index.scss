@@ -81,7 +81,7 @@
 
 .img-container {
   justify-self: center;
-  align-self: center;
+  align-self: flex-end;
   grid-column: 2/3;
   background-image: url(/assets/hero-img.webp);
   -webkit-animation: morph 8s ease-in-out infinite;
@@ -94,6 +94,7 @@
   height: 15rem;
   width: 15rem;
   position: relative;
+  margin: 1em;
 }
 
 @keyframes morph {
@@ -111,7 +112,7 @@
 .title-wrapper {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr auto 1fr;
   height: 50vh;
 }
 
@@ -133,7 +134,8 @@
   justify-self: center;
   align-self: center;
   text-align: center;
-  grid-column: 2 /3;
+  grid-column: 2 / 3;
+  grid-row: 2/ 3;
   width: fit-content;
 }
 
@@ -160,6 +162,10 @@
   }
 
   .title-wrapper > h1 {
-    font-size: $fs-400;
+    font-size: $fs-500;
+  }
+
+  .title-wrapper > h2 {
+    font-size: $fs-sm;
   }
 }
