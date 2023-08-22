@@ -51,3 +51,23 @@ hr {
   border: 0;
   border-top: 1px dotted #efefef;
 }
+
+h1 {
+  color: $primary-color;
+  font-family: Tanker;
+  font-size: $fs-xl;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.06rem;
+  text-align: center;
+}
+
+h2 {
+  color: $primary-color;
+  font-family: Tanker;
+  font-size: $fs-500;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

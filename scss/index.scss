@@ -1,27 +1,8 @@
-@import 'variables';
-@import 'base';
+@import "variables";
+@import "base";
 
-h1 {
-  color: $primary-color;
-  text-align: center;
-  font-family: Tanker;
-  font-size: $fs-600;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.06rem;
-}
+/* Background Blob Motion */
 
-h2 {
-  color: $primary-color;
-  font-family: Tanker;
-  font-size: $fs-500;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-/* styles.css */
 @keyframes blobAnimation {
   0%,
   100% {
@@ -43,8 +24,8 @@ h2 {
 }
 
 .blob {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background: linear-gradient(90deg, #de6161 0%, #2657eb 100%);
   border-radius: 50%;
   position: absolute;
@@ -93,28 +74,9 @@ h2 {
 .blur {
   width: 100vw;
   height: 100vh;
-  flex-shrink: 0;
   background: rgba(217, 217, 217, 0.01);
   backdrop-filter: blur(50px);
   z-index: 1;
-}
-
-@media screen and (max-width: 768px) {
-  .blob {
-    width: 50px;
-    height: 50px;
-    animation: blobAnimation 10s infinite ease-in-out;
-  }
-
-  .fluid {
-    height: 20rem;
-    width: 20rem;
-  }
-
-  .hero-bg {
-    height: 25rem;
-    width: 25rem;
-  }
 }
 
 .img-container {
@@ -147,21 +109,22 @@ h2 {
 }
 
 .title-wrapper {
-  border: 1px solid red;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr min-content 1fr;
   grid-template-rows: repeat(3, 1fr);
-  width: 900px;
   height: 50vh;
 }
 
 .title-wrapper h1:nth-child(1) {
+  align-self: center;;
   justify-self: flex-end;
   text-align: right;
   width: fit-content;
 }
 
 .title-wrapper h1:nth-child(3) {
+  align-self: center;;
+
   text-align: left;
   width: fit-content;
 }
@@ -172,4 +135,31 @@ h2 {
   text-align: center;
   grid-column: 2 /3;
   width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .img-container {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .blob {
+    width: 50px;
+    height: 50px;
+    animation: blobAnimation 10s infinite ease-in-out;
+  }
+
+  .fluid {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .hero-bg {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .title-wrapper > h1 {
+    font-size: $fs-400;
+  }
 }
