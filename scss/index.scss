@@ -9,8 +9,7 @@
 
 // Components
 
-// Utilities 
-
+// Utilities
 
 /* Background Blob Motion */
 
@@ -125,20 +124,22 @@
   grid-template-columns: 1fr min-content 1fr;
   grid-template-rows: 1fr auto 1fr;
   height: 50vh;
+
+  h1:nth-child(1) {
+    align-self: center;
+    justify-self: flex-end;
+    text-align: right;
+    width: fit-content;
+  }
+
+  h1:nth-child(3) {
+    align-self: center;
+    text-align: left;
+    width: fit-content;
+  }
 }
 
-.title-wrapper h1:nth-child(1) {
-  align-self: center;;
-  justify-self: flex-end;
-  text-align: right;
-  width: fit-content;
-}
-
-.title-wrapper h1:nth-child(3) {
-  align-self: center;;
-
-  text-align: left;
-  width: fit-content;
+.title-wrapper {
 }
 
 .title-wrapper > h2 {
