@@ -64,6 +64,14 @@ h2 {
   letter-spacing: 0.06rem;
 }
 
+p {
+  color: #dbdbdb;
+  font-family: Erode;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 /* Background Blob Motion */
 @keyframes blobAnimation {
   0%, 100% {
@@ -194,6 +202,12 @@ h2 {
   grid-column: 2/3;
   grid-row: 2/3;
   width: fit-content;
+}
+
+.title-wrapper > p {
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
 
 @media screen and (max-width: 768px) {
