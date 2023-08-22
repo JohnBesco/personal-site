@@ -1,4 +1,7 @@
 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: $border-base-thickness $accent-color;
   border-radius: 5px;
   color: $secondary-color;
@@ -6,8 +9,9 @@ button {
   padding: $padding-base;
   background-color: $light-bg-color;
   font-size: $fs-sm;
-  width: 12rem;
-  height: 2.5rem;
+  width: 12.25rem;
+  height: 2.6rem;
+  flex-shrink: 0;
 }
 
 button:hover {
