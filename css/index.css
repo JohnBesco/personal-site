@@ -54,6 +54,15 @@ h1 {
   letter-spacing: 0.06rem;
 }
 
+h2 {
+  color: #e7e7e7;
+  font-family: Tanker;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /* styles.css */
 @keyframes blobAnimation {
   0%, 100% {
@@ -113,6 +122,13 @@ h1 {
   width: 35rem;
 }
 
+.hero-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .blur {
   width: 100vw;
   height: 100vh;
@@ -138,6 +154,8 @@ h1 {
   }
 }
 .img-container {
+  justify-self: center;
+  align-self: center;
   grid-column: 2/3;
   background-image: url(/assets/hero-img.webp);
   -webkit-animation: morph 8s ease-in-out infinite;
@@ -147,8 +165,8 @@ h1 {
   background-size: cover;
   border: 3px solid #2d2e32;
   border-radius: 53% 49% 29% 77%/60% 30% 70% 40%;
-  height: 20rem;
-  width: 20rem;
+  height: 15rem;
+  width: 15rem;
   position: relative;
 }
 
@@ -166,8 +184,10 @@ h1 {
 .title-wrapper {
   border: 1px solid red;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto 2fr auto;
+  grid-template-rows: repeat(3, 1fr);
   width: 900px;
+  height: 50vh;
 }
 
 .title-wrapper h1:nth-child(1) {
@@ -181,9 +201,10 @@ h1 {
   width: fit-content;
 }
 
-.hero-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.title-wrapper > h2 {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-column: 2/3;
+  width: fit-content;
 }

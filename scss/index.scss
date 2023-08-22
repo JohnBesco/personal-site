@@ -1,57 +1,8 @@
-@font-face {
-  font-family: "Tanker-Regular";
-  src: url("../fonts/Tanker-Regular.woff2") format("woff2"),
-    url("../fonts/Tanker-Regular.woff") format("woff"),
-    url("../fonts/Tanker-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Erode-Variable";
-  src: url("../fonts/Erode-Variable.woff2") format("woff2"),
-    url("../fonts/Erode-Variable.woff") format("woff"),
-    url("../fonts/Erode-Variable.ttf") format("truetype");
-  font-weight: 300 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-/* Reset Styles */
-
-* {
-  color: inherit;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #0f0f0f;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-hr {
-  border: 0;
-  border-top: 1px dotted #efefef;
-}
+@import 'variables';
+@import 'base';
 
 h1 {
-  color: #e7e7e7;
+  color: $primary-color;
   text-align: center;
   font-family: Tanker;
   font-size: 4rem;
@@ -61,12 +12,14 @@ h1 {
   letter-spacing: 0.06rem;
 }
 
-// Theme Colors 
-
-$primary-color: #E7E7E7;
-$secondary-color:#DBDBDB;
-$accent-color: #92D0FC;
-
+h2 {
+  color: $primary-color;
+  font-family: Tanker;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 /* styles.css */
 @keyframes blobAnimation {
@@ -130,6 +83,13 @@ $accent-color: #92D0FC;
   width: 35rem;
 }
 
+.hero-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .blur {
   width: 100vw;
   height: 100vh;
@@ -158,6 +118,8 @@ $accent-color: #92D0FC;
 }
 
 .img-container {
+  justify-self: center;
+  align-self: center;
   grid-column: 2/3;
   background-image: url(/assets/hero-img.webp);
   -webkit-animation: morph 8s ease-in-out infinite;
@@ -167,8 +129,8 @@ $accent-color: #92D0FC;
   background-size: cover;
   border: 3px solid #2d2e32;
   border-radius: 53% 49% 29% 77%/60% 30% 70% 40%;
-  height: 20rem;
-  width: 20rem;
+  height: 15rem;
+  width: 15rem;
   position: relative;
 }
 
@@ -187,8 +149,10 @@ $accent-color: #92D0FC;
 .title-wrapper {
   border: 1px solid red;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 900px
+  grid-template-columns: auto 2fr auto;
+  grid-template-rows: repeat(3, 1fr);
+  width: 900px;
+  height: 50vh;
 }
 
 .title-wrapper h1:nth-child(1) {
@@ -200,12 +164,12 @@ $accent-color: #92D0FC;
 .title-wrapper h1:nth-child(3) {
   text-align: left;
   width: fit-content;
-
 }
 
-.hero-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.title-wrapper > h2 {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-column: 2 /3;
+  width: fit-content;
 }
