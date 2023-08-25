@@ -1,5 +1,4 @@
 // Fonts
-
 @font-face {
   font-family: "Tanker-Regular";
   src: url("../fonts/Tanker-Regular.woff2") format("woff2"),
@@ -74,7 +73,7 @@ h2 {
 }
 
 p {
-  color: #dbdbdb;
+  color: $secondary-color;
   font-family: Erode;
   font-style: normal;
   font-weight: 500;

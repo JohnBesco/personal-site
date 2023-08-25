@@ -1,0 +1,71 @@
+/* toggle btn */
+
+#toggle-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+.btn-outline {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 0.5px solid $primary-color;
+}
+
+.btn-outline-1 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 4s linear infinite;
+}
+
+.btn-outline-2 {
+  border-radius: 53% 47% 43% 57% / 51% 39% 61% 49%;
+}
+
+#hamburger {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  transform: translateY(-50%);
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 1000;
+}
+
+#hamburger span {
+  color: $primary-color;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 24px;
+  background: $primary-color;
+  transition: transform 0.25s;
+}
+
+#hamburger span::before {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  content: " ";
+  width: 18px;
+  height: 1.25px;
+  background: $primary-color;
+  transform: translateY(-4px);
+  transition: transform 0.25s;
+}
+
+#hamburger.active span {
+  transform: rotate(45deg);
+}
