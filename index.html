@@ -12,16 +12,29 @@
   </head>
   <body>
     <div class="blur">
+      <div class="navigation">
+        <!-- toggle btn -->
 
-      <!-- toggle btn -->
+        <div class="btn" id="toggle-btn">
+          <div class="btn-outline btn-outline-1"></div>
+          <div class="btn-outline btn-outline-2"></div>
 
-      <div class="btn" id="toggle-btn">
-        <div class="btn-outline btn-outline-1"></div>
-        <div class="btn-outline btn-outline-2"></div>
-        <div id="hamburger">
-          <span></span>
+          <div id="hamburger" onclick="show()">
+            <span></span>
+          </div>
         </div>
+
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Projects</a></li>
+          </ul>
+        </nav>
+
+        
       </div>
+
       <header></header>
       <main>
         <div class="hero-container">
@@ -49,6 +62,7 @@
       gsap.set(".menu", { visibility: "hidden" });
 
       // toggle menu
+
       function revealMenu() {
         revealMenuItems();
 
@@ -64,6 +78,7 @@
       revealMenu();
 
       // how to reveal
+
       function revealMenuItems() {
         const start = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
         const end = "M0,1005S175,995,500,995s500,5,500,5V0H0Z";
@@ -105,8 +120,6 @@
           { attr: { d: end }, ease: Power2.easeOut },
           "-=0.5"
         );
-
-        tl.to(".menu", 1, { visibility: "visible" }, "-=0.5");
 
         tl.to(
           ".menu-item > a",

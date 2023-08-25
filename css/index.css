@@ -281,8 +281,14 @@ button:hover {
 
 #hamburger {
   position: relative;
+  display: block;
+  cursor: pointer;
   height: 20px;
   width: 20px;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
   z-index: 1000;
 }
 
@@ -311,6 +317,27 @@ button:hover {
 
 #hamburger.active span {
   transform: rotate(45deg);
+}
+
+nav {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 250px;
+}
+nav a {
+  font-family: "Tanker";
+  color: white;
+  font-size: 1.25rem;
+  text-align: right;
+}
+
+.navigation {
+  position: fixed;
+  width: 350px;
+  height: 100%;
+  background-color: #18181B;
+  transition: 0.5s;
 }
 
 #hamburger.active span::before {
