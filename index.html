@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js"></script>
-    <link rel="script" href="index.js " defer />
     <link rel="stylesheet" href="/css/index.css" />
     <title>John Besco</title>
   </head>
   <body>
     <div class="blur">
       <!-- toggle btn -->
-
       <div class="btn" id="toggle-btn">
         <div class="btn-outline btn-outline-1"></div>
         <div class="btn-outline btn-outline-2"></div>
-
-        <div id="hamburger">
-          <span></span>
-        </div>
+        <button class="menu-button">
+          <svg
+            width="52"
+            height="40"
+            viewBox="0 0 52 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="16" width="52" height="8" rx="2" fill="#E7E7E7" />
+            <rect x="14" y="32" width="38" height="8" rx="2" fill="#E7E7E7" />
+            <rect x="26" width="26" height="8" rx="2" fill="#E7E7E7" />
+          </svg>
+        </button>
       </div>
 
       <nav>
@@ -31,23 +38,24 @@
         </ul>
       </nav>
 
-      <header></header>
-      <main>
-        <div class="hero-container">
-          <div class="title-wrapper">
-            <h1>Hi, I'm</h1>
-            <div class="img-container"></div>
-            <h1>John 👋🏼</h1>
-            <h2>Front End Dev & Freelancer</h2>
-            <p>
-              I help businesses stand out through expertly crafted digital
-              experiences
-            </p>
-            <button>Contact Me</button>
+        <main>
+          <div class="hero-container">
+            <div class="title-wrapper">
+              <h1>Hi, I'm</h1>
+              <div class="img-container"></div>
+              <h1>John 👋🏼</h1>
+              <h2>Front End Dev & Freelancer</h2>
+              <p>
+                I help businesses stand out through expertly crafted digital
+                experiences
+              </p>
+              <button>Contact Me</button>
+            </div>
           </div>
-        </div>
-      </main>
-    </div>
+        </main>
+      </div>
     <div class="hero-bg fluid blob"></div>
+
+    <script src="index.js"></script>
   </body>
 </html>

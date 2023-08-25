@@ -10,8 +10,76 @@
   justify-content: center;
   align-items: center;
   margin: 2em;
-  z-index: 2000;
   cursor: pointer;
+  z-index: 100;
+
+}
+
+.menu-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  right: 0.5em;
+}
+
+.menu-button:hover {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 75%;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: transform ease-out 250ms;
+}
+
+nav ul {
+  font-family: 'Tanker';
+  color: $primary-color;
+  font-size: $fs-500;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: $light-bg-color;
+}
+
+nav a {
+  padding: calc(100vh/8) 4em;
+  display: inline-block;
+  line-height: 0;
+}
+
+nav li {
+  border-bottom: 1px solid $secondary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a:hover {
+  color: $accent-color;
+}
+
+.nav-is-open {
+  nav {
+    transform: translateX(0);
+  }
+
+  .container-all {
+    transform: translateX(80%);
+  }
 }
 
 .btn-outline {
@@ -32,7 +100,7 @@
 
 #hamburger {
   position: relative;
-  display: block;
+  display: flex;
   cursor: pointer;
   height: 20px;
   width: 20px;
