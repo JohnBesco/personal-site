@@ -164,9 +164,8 @@ button:hover {
   transform: rotate(45deg);
 }
 
-/* Background Blob Motion */
 @keyframes blobAnimation {
-  0%, 100% {
+  100% {
     border-radius: 50%;
     transform: translate(-50%, -50%);
   }
@@ -248,7 +247,6 @@ button:hover {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 3px solid #2d2e32;
   border-radius: 53% 49% 29% 77%/60% 30% 70% 40%;
   height: 15rem;
   width: 15rem;
