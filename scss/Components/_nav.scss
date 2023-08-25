@@ -37,7 +37,7 @@ nav {
   top: 0;
   bottom: 0;
   right: 0;
-  left: 75%;
+  left: 15%;
   z-index: 10;
   transform: translateX(100%);
   transition: transform ease-out 250ms;
@@ -72,13 +72,21 @@ nav a:hover {
   color: $accent-color;
 }
 
+.close-icon {
+  display: none;
+}
+
 .nav-is-open {
   nav {
     transform: translateX(0);
   }
 
-  .container-all {
-    transform: translateX(80%);
+  .open-icon {
+    display: none;
+  }
+  
+  .close-icon {
+    display: block;
   }
 }
 

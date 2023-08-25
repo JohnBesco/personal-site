@@ -13,7 +13,8 @@
   font-style: normal;
 }
 /* Reset Styles */
-html {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -25,6 +26,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -135,7 +137,7 @@ nav {
   top: 0;
   bottom: 0;
   right: 0;
-  left: 75%;
+  left: 15%;
   z-index: 10;
   transform: translateX(100%);
   transition: transform ease-out 250ms;
@@ -170,11 +172,18 @@ nav a:hover {
   color: #92d0fc;
 }
 
+.close-icon {
+  display: none;
+}
+
 .nav-is-open nav {
   transform: translateX(0);
 }
-.nav-is-open .container-all {
-  transform: translateX(80%);
+.nav-is-open .open-icon {
+  display: none;
+}
+.nav-is-open .close-icon {
+  display: block;
 }
 
 .btn-outline {

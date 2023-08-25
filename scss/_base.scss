@@ -21,10 +21,10 @@
 
 /* Reset Styles */
 
-html {
+html,
+body {
   overflow-x: hidden;
 }
-
 * {
   color: inherit;
   box-sizing: border-box;
@@ -33,6 +33,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   display: flex;
   justify-content: center;
