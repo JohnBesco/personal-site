@@ -21,6 +21,10 @@
 
 /* Reset Styles */
 
+html {
+  overflow-x: hidden;
+}
+
 * {
   color: inherit;
   box-sizing: border-box;
