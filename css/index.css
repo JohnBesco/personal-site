@@ -6,9 +6,9 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Erode-Variable";
-  src: url("../fonts/Erode-Variable.woff2") format("woff2"), url("../fonts/Erode-Variable.woff") format("woff"), url("../fonts/Erode-Variable.ttf") format("truetype");
-  font-weight: 300 700;
+  font-family: "Erode-Regular";
+  src: url("../fonts/Erode-Regular.woff2") format("woff2"), url("../fonts/Erode-Regular.woff") format("woff"), url("../fonts/Erode-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
@@ -102,28 +102,33 @@ button:hover {
 
 /* toggle btn */
 #toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
   width: 100px;
   height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 2em;
   cursor: pointer;
   z-index: 100;
+  padding-bottom: 1em;
 }
 
 .menu-button {
+  display: flex;
+  align-self: center;
+  justify-self: center;
   cursor: pointer;
   background-color: transparent;
   border: none;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   top: 0;
   right: 0.5em;
+  border-radius: 100%;
 }
 
 .menu-button:hover {
@@ -137,7 +142,7 @@ nav {
   top: 0;
   bottom: 0;
   right: 0;
-  left: 15%;
+  left: 55%;
   z-index: 10;
   transform: translateX(100%);
   transition: transform ease-out 250ms;
@@ -146,11 +151,11 @@ nav {
 nav ul {
   font-family: "Tanker";
   color: #e7e7e7;
-  font-size: 2.25rem;
+  font-size: 4rem;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: stretch;
   background-color: #18181B;
 }
@@ -188,8 +193,8 @@ nav a:hover {
 
 .btn-outline {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border: 0.5px solid #e7e7e7;
 }
 
@@ -202,46 +207,18 @@ nav a:hover {
   border-radius: 53% 47% 43% 57%/51% 39% 61% 49%;
 }
 
-#hamburger {
-  position: relative;
-  display: flex;
-  cursor: pointer;
-  height: 20px;
-  width: 20px;
-  transform: translateY(-50%);
-  background: none;
-  outline: none;
-  border: none;
-  z-index: 1000;
+@media screen and (max-width: 768px) {
+  nav ul {
+    font-size: 2rem;
+  }
+  .btn-outline {
+    width: 50px;
+    height: 50px;
+  }
+  #toggle-btn {
+    right: -30px;
+  }
 }
-
-#hamburger span {
-  color: #e7e7e7;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: inline-block;
-  width: 24px;
-  background: #e7e7e7;
-  transition: transform 0.25s;
-}
-
-#hamburger span::before {
-  position: absolute;
-  right: 0;
-  display: inline-block;
-  content: " ";
-  width: 18px;
-  height: 1.25px;
-  background: #e7e7e7;
-  transform: translateY(-4px);
-  transition: transform 0.25s;
-}
-
-#hamburger.active span {
-  transform: rotate(45deg);
-}
-
 @keyframes blobAnimation {
   100% {
     border-radius: 50%;
@@ -421,14 +398,14 @@ nav a:hover {
   }
   .title-wrapper p {
     font-size: 1.25rem;
-    width: 15rem;
+    width: 16rem;
     height: 3rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
   }
   .title-wrapper button {
-    width: 10rem;
+    width: 8rem;
     height: 2rem;
-    font-size: 1.25rem;
+    font-size: 0.85rem;
     margin-top: 1.2em;
   }
 }

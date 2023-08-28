@@ -1,29 +1,33 @@
 /* toggle btn */
 
 #toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
   width: 100px;
   height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 2em;
   cursor: pointer;
   z-index: 100;
-
+  padding-bottom: 1em;
 }
 
 .menu-button {
+  display: flex;
+  align-self: center;
+  justify-self: center;
   cursor: pointer;
   background-color: transparent;
   border: none;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px; 
   position: absolute;
   top: 0;
   right: 0.5em;
+  border-radius: 100%;
 }
 
 .menu-button:hover {
@@ -37,7 +41,7 @@ nav {
   top: 0;
   bottom: 0;
   right: 0;
-  left: 15%;
+  left: 55%;
   z-index: 10;
   transform: translateX(100%);
   transition: transform ease-out 250ms;
@@ -46,11 +50,11 @@ nav {
 nav ul {
   font-family: 'Tanker';
   color: $primary-color;
-  font-size: $fs-500;
+  font-size: $fs-600;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: stretch;
   background-color: $light-bg-color;
 }
@@ -92,8 +96,8 @@ nav a:hover {
 
 .btn-outline {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border: 0.5px solid $primary-color;
 }
 
@@ -106,42 +110,18 @@ nav a:hover {
   border-radius: 53% 47% 43% 57% / 51% 39% 61% 49%;
 }
 
-#hamburger {
-  position: relative;
-  display: flex;
-  cursor: pointer;
-  height: 20px;
-  width: 20px;
-  transform: translateY(-50%);
-  background: none;
-  outline: none;
-  border: none;
-  z-index: 1000;
-}
 
-#hamburger span {
-  color: $primary-color;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: inline-block;
-  width: 24px;
-  background: $primary-color;
-  transition: transform 0.25s;
-}
+@media screen and (max-width: 768px) {
+  nav ul {
+    font-size: $fs-400;
+  }  
 
-#hamburger span::before {
-  position: absolute;
-  right: 0;
-  display: inline-block;
-  content: " ";
-  width: 18px;
-  height: 1.25px;
-  background: $primary-color;
-  transform: translateY(-4px);
-  transition: transform 0.25s;
-}
+  .btn-outline {
+    width: 50px;
+    height: 50px;
+  }
 
-#hamburger.active span {
-  transform: rotate(45deg);
+  #toggle-btn {
+    right: -30px;
+  }
 }
