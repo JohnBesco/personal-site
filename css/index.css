@@ -413,5 +413,44 @@ nav a:hover {
   }
 }
 .projects-container {
+  margin: 6em auto;
+  width: fit-content;
+  height: max-content;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-title {
+  margin-bottom: 0.3em;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.technologies-container {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.images-container {
+  position: relative;
+}
+
+.images-container img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
