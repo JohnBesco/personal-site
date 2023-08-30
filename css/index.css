@@ -6,9 +6,9 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Erode-Regular";
-  src: url("../fonts/Erode-Regular.woff2") format("woff2"), url("../fonts/Erode-Regular.woff") format("woff"), url("../fonts/Erode-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Erode-Variable";
+  src: url("../fonts/Erode-Variable.woff2") format("woff2"), url("../fonts/Erode-Variable.woff") format("woff"), url("../fonts/Erode-Variable.ttf") format("truetype");
+  font-weight: 300 700;
   font-display: swap;
   font-style: normal;
 }
