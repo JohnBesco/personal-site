@@ -149,7 +149,7 @@ nav {
 }
 
 nav ul {
-  font-family: "Tanker";
+  font-family: "Tanker", sans-serif;
   color: #e7e7e7;
   font-size: 4rem;
   display: flex;
@@ -411,4 +411,7 @@ nav a:hover {
     font-size: 0.85rem;
     margin-top: 1.2em;
   }
+}
+.projects-container {
+  display: flex;
 }
