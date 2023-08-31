@@ -13,24 +13,9 @@
 
 // Utilities
 
-@keyframes blobAnimation {
-  100% {
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-  }
-  25% {
-    border-radius: 60%;
-    transform: translate(-45%, -45%);
-  }
-  50% {
-    border-radius: 70%;
-    transform: translate(-40%, -40%);
-  }
-  75% {
-    border-radius: 60%;
-    transform: translate(-45%, -45%);
-  }
-}
+// Animations
+
+@import "animations";
 
 .blob {
   width: 200px;
@@ -42,18 +27,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   animation: blobAnimation 10s infinite ease-in-out;
-}
-
-@keyframes fluid {
-  0% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
-  100% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
 }
 
 .fluid {
@@ -106,18 +79,6 @@
   position: relative;
   margin: 1em;
   z-index: 3;
-}
-
-@keyframes morph {
-  0% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
-  100% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
 }
 
 .title-wrapper {
@@ -367,8 +328,6 @@ section {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: $accent-color;
-    background: $primary-color;
     height: 50px;
     width: 50px;
     border-radius: 100%;
@@ -379,96 +338,11 @@ section {
     font-weight: bolder;
   }
 
-  #prev:hover,
-  #next:hover {
-    background: orange;
-  }
-
   #prev {
-    left: 20px;
+    left: 30px;
   }
 
   #next {
-    right: 20px;
-  }
-}
-
-
-.fade-in-scale {
-  opacity: 0;
-  transform: scale(0.8);
-  animation: fadeInScale 0.8s forwards;
-}
-
-@keyframes fadeInScale {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.fade-in-scale:nth-child(1) {
-  animation: fadeInScale 2.4s forwards 0.2s;
-  animation-delay: 0.8s;
-}
-
-.fade-in-scale:nth-child(2) {
-  animation: fadeInScale 2.6s forwards 0.2s;
-  animation-delay: 1.2s;
-}
-
-.fade-in-bottom {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInBottom 2.4s ease-in forwards;
-}
-
-@keyframes fadeInBottom {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in-bottom:nth-child(1) {
-  animation-delay: 0.2s;
-}
-
-.tech-container {
-  .fade-in-bottom {
-    animation-delay: 1.2s;
-  }
-}
-
-.fade-in-left {
-  opacity: 0;
-  transform: translateX(-20px);
-  animation: fadeInLeft 1s ease-out forwards;
-}
-
-.fade-in-left:nth-child(1) {
-  animation-delay: 2s;
-}
-
-.fade-in-left:nth-child(2) {
-  animation-delay: 2.2s;
-}
-
-.fade-in-left:nth-child(3) {
-  animation-delay: 2.4s;
-}
-
-.fade-in-left:nth-child(4) {
-  animation-delay: 2.6s;
-}
-
-.fade-in-left:nth-child(5) {
-  animation-delay: 2.8s;
-}
-
-@keyframes fadeInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
+    right: 30px;
   }
 }
