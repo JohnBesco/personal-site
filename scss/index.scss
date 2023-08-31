@@ -1,6 +1,9 @@
 // Variables & Functions
 @import "variables";
 
+// Animations
+@import "animations";
+
 // Base & Layout
 
 @import "base";
@@ -13,9 +16,8 @@
 
 // Utilities
 
-// Animations
 
-@import "animations";
+
 
 .blob {
   width: 200px;

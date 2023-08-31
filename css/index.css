@@ -1,3 +1,145 @@
+@keyframes blobAnimation {
+  100% {
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    border-radius: 60%;
+    transform: translate(-45%, -45%);
+  }
+  50% {
+    border-radius: 70%;
+    transform: translate(-40%, -40%);
+  }
+  75% {
+    border-radius: 60%;
+    transform: translate(-45%, -45%);
+  }
+}
+@keyframes fluid {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+.fade-in-scale {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 0.8s forwards;
+}
+
+@keyframes fadeInScale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.fade-in-scale:nth-child(1) {
+  animation: fadeInScale 2.4s forwards 0.2s;
+  animation-delay: 0.8s;
+}
+
+.fade-in-scale:nth-child(2) {
+  animation: fadeInScale 2.6s forwards 0.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in-bottom {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInBottom 2.4s ease-in forwards;
+}
+
+@keyframes fadeInBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-bottom:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.tech-container .fade-in-bottom {
+  animation-delay: 1.2s;
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.fade-in-left:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.fade-in-left:nth-child(2) {
+  animation-delay: 2.2s;
+}
+
+.fade-in-left:nth-child(3) {
+  animation-delay: 2.4s;
+}
+
+.fade-in-left:nth-child(4) {
+  animation-delay: 2.6s;
+}
+
+.fade-in-left:nth-child(5) {
+  animation-delay: 2.8s;
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.arrow path {
+  fill: transparent;
+  stroke: 10;
+  stroke: #92d0fc;
+  stroke-dasharray: 210;
+  stroke-dashoffset: 0;
+}
+
+.arrow path:hover {
+  animation: animate-arrow 1s linear forwards;
+}
+
+@keyframes animate-arrow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 210;
+  }
+  80% {
+    stroke-dashoffset: 420;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 420;
+    fill: #92d0fc;
+  }
+}
 @font-face {
   font-family: "Tanker-Regular";
   src: url("../fonts/Tanker-Regular.woff2") format("woff2"), url("../fonts/Tanker-Regular.woff") format("woff"), url("../fonts/Tanker-Regular.ttf") format("truetype");
