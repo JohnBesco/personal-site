@@ -152,6 +152,30 @@
     fill: #92d0fc;
   }
 }
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeft 1s forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @font-face {
   font-family: "Tanker-Regular";
   src: url("../fonts/Tanker-Regular.woff2") format("woff2"), url("../fonts/Tanker-Regular.woff") format("woff"), url("../fonts/Tanker-Regular.ttf") format("truetype");
