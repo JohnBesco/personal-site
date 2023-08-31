@@ -84,6 +84,7 @@
 .blur {
   width: 100vw;
   height: 100vh;
+  margin: 0 auto;
   background: rgba(13, 13, 13, 0.3);
   backdrop-filter: blur(60px);
   z-index: 1;
@@ -224,6 +225,11 @@
   }
 }
 
+section {
+  width: 100%;
+  height: 100%;
+}
+
 .projects-container {
   margin: 6em auto;
   width: fit-content;
@@ -282,11 +288,10 @@
     transition-timing-function: linear;
     transition-duration: 600ms;
 
-    h2 {
+    .black-text {
       color: black;
       margin-bottom: 0.5em;
     }
-
 
     button {
       cursor: pointer;
@@ -314,8 +319,67 @@
   bottom: 0;
 }
 
-.background-graphic {
+.background-graphic1 {
   position: absolute;
   right: 200px;
   bottom: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.container {
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .slide-container {
+    display: none;
+  }
+
+  .slide-container.active {
+    display: block;
+  }
+
+  #prev,
+  #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $accent-color;
+    background: $primary-color;
+    height: 50px;
+    width: 40px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+
+  #prev:hover,
+  #next:hover {
+    background: orange;
+  }
+
+  #prev {
+    left: 20px;
+  }
+
+  #next {
+    right: 20px;
+  }
+}
+
+.overlay {
+  .white-text {
+    color: white;
+    margin-bottom: 0.5em;
+  }
 }

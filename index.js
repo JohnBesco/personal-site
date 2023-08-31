@@ -1,4 +1,7 @@
 const navToggle = document.querySelector(".menu-button");
+const nav = document.querySelector("nav");
+let slides = document.querySelectorAll(".slide-container");
+let index = 0;
 
 navToggle.addEventListener("click", () => {
   document.body.classList.toggle("nav-is-open");
@@ -8,47 +11,22 @@ nav.addEventListener("click", () => {
   document.body.classList.remove("nav-is-open");
 });
 
-let cursor = document.querySelector(".cursor");
-let follower = document.querySelector(".cursor-follower");
-
-let posX = 0;
-let posY = 0;
-let mouseX = 0;
-let mouseY = 0;
-
-TweenMax.to({}, 0.016, {
-  repeat: -1,
-  onRepeat: function () {
-    posX += (mouseX - posX) / 9;
-    posY += (mouseY - posY) / 9;
-
-    TweenMax.set(follower, {
-      left: posX - 20,
-      top: posY - 20,
-    });
-
-    TweenMax.set(cursor, {
-      left: mouseX,
-      top: mouseY,
-    });
-  },
-});
-
-document.addEventListener("mousemove", (e) => {
-  mouseX = e.pageX;
-  mouseY = e.pageY;
-});
-
-const portfolioImages = document.querySelectorAll(".portfolio-item img");
-
-portfolioImages.forEach((img) => {
-  img.addEventListener("mouseenter", () => {
-    cursor.classList.add("active");
-    follower.classList.add("active");
+function showSlide() {
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
   });
+  slides[index].classList.add("active");
+}
 
-  img.addEventListener("mouseleave", () => {
-    cursor.classList.remove("active");
-    follower.classList.remove("active");
-  });
-});
+function next() {
+  index = (index + 1) % slides.length;
+  showSlide();
+}
+
+function prev() {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide();
+}
+
+document.getElementById("next").addEventListener("click", next);
+document.getElementById("prev").addEventListener("click", prev);
