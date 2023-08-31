@@ -15,7 +15,7 @@
 /* Reset Styles */
 html,
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -454,6 +454,11 @@ section {
   position: relative;
   overflow: hidden;
 }
+.images-container img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 .images-container .overlay {
   display: flex;
   align-items: center;
@@ -479,6 +484,10 @@ section {
   color: black;
   margin-bottom: 0.5em;
 }
+.images-container .overlay .white-text {
+  color: white;
+  margin-bottom: 0.5em;
+}
 .images-container .overlay button {
   cursor: pointer;
 }
@@ -495,12 +504,6 @@ section {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.images-container img:nth-child(2) {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
 .background-graphic1 {
   position: absolute;
   right: 200px;
@@ -509,6 +512,13 @@ section {
 
 .container {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .projects-title {
+  margin: 5em auto -8em auto;
 }
 
 .container .slide {
@@ -518,6 +528,8 @@ section {
   flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 .container .slide-container {
   display: none;
@@ -533,7 +545,8 @@ section {
   color: #92d0fc;
   background: #e7e7e7;
   height: 50px;
-  width: 40px;
+  width: 50px;
+  border-radius: 100%;
   line-height: 50px;
   font-size: 25px;
   text-align: center;
@@ -551,7 +564,77 @@ section {
   right: 20px;
 }
 
-.overlay .white-text {
-  color: white;
-  margin-bottom: 0.5em;
+.fade-in-scale {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 0.8s forwards;
+}
+
+@keyframes fadeInScale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.fade-in-scale:nth-child(1) {
+  animation: fadeInScale 2.4s forwards 0.2s;
+  animation-delay: 0.8s;
+}
+
+.fade-in-scale:nth-child(2) {
+  animation: fadeInScale 2.6s forwards 0.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in-bottom {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInBottom 2.4s ease-in forwards;
+}
+
+@keyframes fadeInBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-bottom:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.tech-container .fade-in-bottom {
+  animation-delay: 1.2s;
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.fade-in-left:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.fade-in-left:nth-child(2) {
+  animation-delay: 2.2s;
+}
+
+.fade-in-left:nth-child(3) {
+  animation-delay: 2.4s;
+}
+
+.fade-in-left:nth-child(4) {
+  animation-delay: 2.6s;
+}
+
+.fade-in-left:nth-child(5) {
+  animation-delay: 2.8s;
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
