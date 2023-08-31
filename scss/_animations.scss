@@ -120,6 +120,19 @@
   }
 }
 
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .arrow path {
   fill: transparent;
   stroke: 10;
