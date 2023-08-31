@@ -16,9 +16,6 @@
 
 // Utilities
 
-
-
-
 .blob {
   width: 200px;
   height: 200px;
@@ -127,64 +124,6 @@
     justify-self: center;
     grid-column: 2 / 3;
     margin-top: 0.4em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .img-container {
-    height: 6rem;
-    width: 6rem;
-  }
-
-  .blob {
-    width: 50px;
-    height: 50px;
-    animation: blobAnimation 10s infinite ease-in-out;
-  }
-
-  .fluid {
-    height: 15rem;
-    width: 15rem;
-  }
-
-  .hero-bg {
-    height: 15rem;
-    width: 15rem;
-  }
-
-  .title-wrapper {
-    h1 {
-      font-size: $fs-500;
-    }
-
-    h1:nth-child(1) {
-      text-align: right;
-      margin-right: -1.8em;
-    }
-
-    h1:nth-child(3) {
-      text-align: left;
-      margin-left: -1.8em;
-    }
-
-    h2 {
-      font-size: $fs-sm;
-      width: 12rem;
-    }
-
-    p {
-      font-size: $fs-sm;
-      width: 16rem;
-      height: 3rem;
-      margin-bottom: 1.2rem;
-    }
-
-    button {
-      width: 8rem;
-      height: 2rem;
-      font-size: $fs-xsm;
-      margin-top: 1.2em;
-    }
   }
 }
 
@@ -346,5 +285,86 @@ section {
 
   #next {
     right: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-container {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .blob {
+    width: 50px;
+    height: 50px;
+    animation: blobAnimation 10s infinite ease-in-out;
+  }
+
+  .fluid {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .hero-bg {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .title-wrapper {
+    h1 {
+      font-size: $fs-500;
+    }
+
+    h1:nth-child(1) {
+      text-align: right;
+      margin-right: -1.8em;
+    }
+
+    h1:nth-child(3) {
+      text-align: left;
+      margin-left: -1.8em;
+    }
+
+    h2 {
+      font-size: $fs-sm;
+      width: 12rem;
+    }
+
+    p {
+      font-size: $fs-sm;
+      width: 16rem;
+      height: 3rem;
+      margin-bottom: 1.2rem;
+    }
+
+    button {
+      width: 8rem;
+      height: 2rem;
+      font-size: $fs-xsm;
+      margin-top: 1.2em;
+    }
+  }
+
+  .projects-title {
+    h1 {
+      font-size: $fs-500;
+    }
+  }
+
+  .images-container {
+    img:first-child {
+      width: 358px;
+      height: 212px;
+    }
+
+    img:nth-child(2) {
+      width: 77px;
+      height: 140px;
+    }
+  }
+
+  svg {
+    width: 30px;
+    height: 25px;
   }
 }
