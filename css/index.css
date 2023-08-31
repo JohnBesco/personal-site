@@ -427,8 +427,8 @@ nav a:hover {
 }
 
 .icon {
-  width: 3rem;
-  height: 3rem;
+  aspect-ratio: 2/1;
+  object-fit: contain;
 }
 
 .technologies-container {
@@ -452,5 +452,11 @@ nav a:hover {
 .images-container img:nth-child(2) {
   position: absolute;
   right: 0;
+  bottom: 0;
+}
+
+.background-graphic {
+  position: absolute;
+  right: 200px;
   bottom: 0;
 }
