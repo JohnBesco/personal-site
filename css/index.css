@@ -401,6 +401,9 @@ nav a:hover {
   nav ul {
     justify-content: space-evenly;
   }
+  nav a {
+    padding: 12.5vh 0.5em;
+  }
 }
 .blob {
   width: 200px;

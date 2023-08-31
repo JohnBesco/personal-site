@@ -128,4 +128,8 @@ nav a:hover {
   nav ul {
     justify-content: space-evenly;
   }
+
+  nav a {
+    padding: calc(100vh/8) 0.5em;
+  }
 }
