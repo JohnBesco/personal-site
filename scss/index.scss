@@ -120,10 +120,12 @@
     margin-bottom: 1rem;
   }
 
-  button {
+  .cta {
     justify-self: center;
     grid-column: 2 / 3;
     margin-top: 0.4em;
+    width: $base-btn-width;
+    height: $base-btn-height;
   }
 }
 
@@ -206,8 +208,10 @@ section {
       margin-bottom: 0.5em;
     }
 
-    button {
+    .view-btn {
       cursor: pointer;
+      width: $base-btn-width;
+      height: $base-btn-height;
     }
   }
 }
@@ -334,12 +338,12 @@ section {
       font-size: $fs-sm;
       width: 16rem;
       height: 3rem;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.4rem;
     }
 
-    button {
-      width: 8rem;
-      height: 2rem;
+    .cta {
+      width: $sm-btn-width;
+      height: $sm-btn-height;
       font-size: $fs-xsm;
       margin-top: 1.2em;
     }
@@ -395,6 +399,7 @@ section {
       }
     }
   }
+
   .container {
     padding: 1em;
   }
@@ -404,4 +409,11 @@ section {
       font-size: $fs-sm;
     }
   }
+
+  .view-btn {
+    text-align: center;
+    font-size: $fs-sm !important;
+    width: $sm-btn-width !important;
+    height: $sm-btn-height !important;
+  } 
 }

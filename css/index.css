@@ -502,10 +502,12 @@ nav a:hover {
   width: 31.6875rem;
   margin-bottom: 1rem;
 }
-.title-wrapper button {
+.title-wrapper .cta {
   justify-self: center;
   grid-column: 2/3;
   margin-top: 0.4em;
+  width: 12.25rem;
+  height: 2.6rem;
 }
 
 section {
@@ -581,8 +583,10 @@ section {
   color: white;
   margin-bottom: 0.5em;
 }
-.images-container .overlay button {
+.images-container .overlay .view-btn {
   cursor: pointer;
+  width: 12.25rem;
+  height: 2.6rem;
 }
 
 .images-container:hover .overlay {
@@ -688,10 +692,10 @@ section {
     font-size: 1.25rem;
     width: 16rem;
     height: 3rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.4rem;
   }
-  .title-wrapper button {
-    width: 8rem;
+  .title-wrapper .cta {
+    width: 10.6875rem;
     height: 2rem;
     font-size: 0.85rem;
     margin-top: 1.2em;
@@ -737,5 +741,11 @@ section {
   }
   .overlay h2 {
     font-size: 1.25rem;
+  }
+  .view-btn {
+    text-align: center;
+    font-size: 1.25rem !important;
+    width: 10.6875rem !important;
+    height: 2rem !important;
   }
 }
