@@ -56,18 +56,18 @@
 
 .fade-in-scale:nth-child(1) {
   animation: fadeInScale 2.4s forwards 0.2s;
-  animation-delay: 0.8s;
+  animation-delay: 0.6s;
 }
 
 .fade-in-scale:nth-child(2) {
   animation: fadeInScale 2.6s forwards 0.2s;
-  animation-delay: 1.2s;
+  animation-delay: 1s;
 }
 
 .fade-in-bottom {
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInBottom 2.4s ease-in forwards;
+  animation: fadeInBottom 2.2s ease-in forwards;
 }
 
 @keyframes fadeInBottom {
@@ -185,5 +185,29 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+.fade-in-left-angle {
+  transform: translateY(30px) translateX(30px) scale(0.8);
+  animation: 1s ease-out 0.1s 1 normal forwards running leftAngle;
+}
+
+.fade-in-right-angle {
+  transform: scale(0.9) translateY(40px);
+  animation: 1s ease-out 0.1s 1 normal forwards running rightAngle;
+}
+
+@keyframes leftAngle {
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes rightAngle {
+  100% {
+    opacity: 1;
+    transform: translateY(0px) translateX(0px);
   }
 }
