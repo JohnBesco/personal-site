@@ -398,4 +398,10 @@ section {
   .container {
     padding: 1em;
   }
+
+  .overlay {
+    h2 {
+      font-size: $fs-sm;
+    }
+  }
 }

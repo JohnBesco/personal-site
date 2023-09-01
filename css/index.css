@@ -270,8 +270,6 @@ button {
   padding: 0.8rem 1.7rem 0.8rem 1.7rem;
   background-color: #18181B;
   font-size: 1.25rem;
-  width: 12.25rem;
-  height: 2.6rem;
   flex-shrink: 0;
 }
 
@@ -736,5 +734,8 @@ section {
   }
   .container {
     padding: 1em;
+  }
+  .overlay h2 {
+    font-size: 1.25rem;
   }
 }

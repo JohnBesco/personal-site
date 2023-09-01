@@ -1,3 +1,10 @@
+$base-btn-width: 12.25rem;
+$base-btn-height: 2.6rem;
+
+$sm-btn-width: 10.6875rem;
+$sm-btn-height: 2rem;
+
+
 button {
   display: flex;
   align-items: center;
@@ -9,8 +16,6 @@ button {
   padding: $padding-base;
   background-color: $light-bg-color;
   font-size: $fs-sm;
-  width: 12.25rem;
-  height: 2.6rem;
   flex-shrink: 0;
 }
 
