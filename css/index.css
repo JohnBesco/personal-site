@@ -699,18 +699,42 @@ section {
     margin-top: 1.2em;
   }
   .projects-title h1 {
-    font-size: 2.25rem;
+    font-size: 4rem;
+    margin: 1em auto -1em auto;
   }
   .images-container img:first-child {
-    width: 358px;
-    height: 212px;
+    width: 22.375rem;
+    height: 13.25rem;
   }
   .images-container img:nth-child(2) {
-    width: 77px;
-    height: 140px;
+    width: 4.8125rem;
+    height: 8.75rem;
   }
-  svg {
+  #prev {
+    margin-top: 3em;
+  }
+  #next {
+    margin-top: 3em;
+  }
+  .arrow {
     width: 30px;
     height: 25px;
+  }
+  .tech-container h2 {
+    margin: 3em 0 0.5em 0;
+    font-size: 2rem;
+  }
+  .tech-container .icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .tech-container .icons-container img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+  .container {
+    padding: 1em;
   }
 }
