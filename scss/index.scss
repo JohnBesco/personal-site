@@ -164,7 +164,6 @@
 }
 
 .projects-title {
-  border: 1px solid red;
   padding-top: 1em;
 }
 
@@ -252,9 +251,20 @@
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+// Project Page Background Graphic
+
+
 .background-graphic1 {
   position: absolute;
   right: 200px;
+  bottom: 400px;
+}
+
+// About Page Background Graphic
+
+.background-graphic2 {
+  position: absolute;
+  left: 200px;
   bottom: 400px;
 }
 
@@ -330,7 +340,7 @@
   border: 1px solid red;
   width: fit-content;
   height: fit-content;
-  margin: 5em 3em;
+  margin: 1em;
 }
 
 .about-text-wrapper {
@@ -342,6 +352,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2em;
 
   img {
     border-radius: 10px;
@@ -351,7 +362,7 @@
 
 .image:nth-child(1) img {
   transform: rotate(-15deg);
-  margin-right: -10em;
+  margin-right: -11em;
 }
 
 .image:nth-child(2) img {
@@ -361,7 +372,7 @@
 
 .image:nth-child(3) img {
   transform: rotate(15deg);
-  margin-left: -10em;
+  margin-left: -11em;
 
 }
 

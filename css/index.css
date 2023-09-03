@@ -561,7 +561,6 @@ nav a:hover {
 }
 
 .projects-title {
-  border: 1px solid red;
   padding-top: 1em;
 }
 
@@ -646,6 +645,12 @@ nav a:hover {
   bottom: 400px;
 }
 
+.background-graphic2 {
+  position: absolute;
+  left: 200px;
+  bottom: 400px;
+}
+
 .projects-page-container {
   position: relative;
   display: flex;
@@ -709,7 +714,7 @@ nav a:hover {
   border: 1px solid red;
   width: fit-content;
   height: fit-content;
-  margin: 5em 3em;
+  margin: 1em;
 }
 
 .about-text-wrapper {
@@ -721,6 +726,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2em;
 }
 .about-images-container img {
   border-radius: 10px;
@@ -729,7 +735,7 @@ nav a:hover {
 
 .image:nth-child(1) img {
   transform: rotate(-15deg);
-  margin-right: -10em;
+  margin-right: -11em;
 }
 
 .image:nth-child(2) img {
@@ -739,7 +745,7 @@ nav a:hover {
 
 .image:nth-child(3) img {
   transform: rotate(15deg);
-  margin-left: -10em;
+  margin-left: -11em;
 }
 
 .about-text {
