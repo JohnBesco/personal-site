@@ -329,8 +329,9 @@
   justify-content: center;
   flex-direction: column;
   border: 1px solid red;
-  width: 100vw;
+  width: 45rem;
   height: 100vh;
+  padding-top: 12em;
 }
 
 .about-title-wrapper {
@@ -342,7 +343,7 @@
 
 .about-text-wrapper {
   border: 1px solid blueviolet;
-  width: 50rem;
+  width: 100%;
 }
 
 .about-images-container {
@@ -376,6 +377,14 @@
   font-size: $fs-sm;
   margin-bottom: 1em;
 }
+
+.skills-container {
+  border: 1px solid red;
+  width: 100%;
+}
+
+
+// Media Queries
 
 @media screen and (max-width: 768px) {
   .img-container {

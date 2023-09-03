@@ -706,8 +706,9 @@ nav a:hover {
   justify-content: center;
   flex-direction: column;
   border: 1px solid red;
-  width: 100vw;
+  width: 45rem;
   height: 100vh;
+  padding-top: 12em;
 }
 
 .about-title-wrapper {
@@ -719,7 +720,7 @@ nav a:hover {
 
 .about-text-wrapper {
   border: 1px solid blueviolet;
-  width: 50rem;
+  width: 100%;
 }
 
 .about-images-container {
@@ -751,6 +752,11 @@ nav a:hover {
 .about-text {
   font-size: 1.25rem;
   margin-bottom: 1em;
+}
+
+.skills-container {
+  border: 1px solid red;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
