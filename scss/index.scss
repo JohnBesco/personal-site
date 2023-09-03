@@ -259,8 +259,14 @@
 
 .background-graphic2 {
   position: absolute;
+  left: 90%;
+  top: 100%;
+}
+
+.background-graphic3 {
+  position: absolute;
   left: 10%;
-  bottom: 20%;
+  bottom: 100%;
 }
 
 .projects-page-container {
@@ -409,7 +415,7 @@
   width: 100%;
 
   h2 {
-    margin: 0.5em 0 0.8em;
+    margin: 1em 0 1em 0;
   }
 
   .icons-container {
