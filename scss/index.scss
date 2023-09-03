@@ -97,7 +97,6 @@
   grid-template-rows: min-content min-content min-content;
   height: 50vh;
 
-
   h1 {
     align-self: center;
     width: fit-content;
@@ -162,10 +161,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  .projects-title {
-    margin: 5em 8em;
-  }
+.projects-title {
+  border: 1px solid red;
+  padding-top: 1em;
 }
 
 .tech-container {
@@ -191,6 +191,7 @@
 .images-container {
   position: relative;
   overflow: hidden;
+  margin-top: 1em;
 
   img:nth-child(2) {
     position: absolute;

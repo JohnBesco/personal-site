@@ -559,8 +559,10 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
-.projects-container .projects-title {
-  margin: 5em 8em;
+
+.projects-title {
+  border: 1px solid red;
+  padding-top: 1em;
 }
 
 .tech-container {
@@ -584,6 +586,7 @@ nav a:hover {
 .images-container {
   position: relative;
   overflow: hidden;
+  margin-top: 1em;
 }
 .images-container img:nth-child(2) {
   position: absolute;
