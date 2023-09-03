@@ -329,9 +329,9 @@
   justify-content: center;
   flex-direction: column;
   border: 1px solid red;
-  width: 45rem;
+  width: 50rem;
   height: 100vh;
-  padding-top: 12em;
+  padding-top: 15em;
 }
 
 .about-title-wrapper {
@@ -381,8 +381,19 @@
 .skills-container {
   border: 1px solid red;
   width: 100%;
-}
 
+  .icons-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4em;
+
+    .icon {
+      aspect-ratio: 1/1;
+      object-fit: contain;
+    }
+  }
+}
 
 // Media Queries
 
