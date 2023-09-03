@@ -3,7 +3,7 @@ const reveals = document.querySelectorAll(".reveal");
 reveals.forEach((reveal, index) => {
   setTimeout(() => {
     reveal.style.opacity = "1";
-  }, index * 120); //
+  }, index * 60); //
 });
 
 const navToggle = document.querySelector(".menu-button");
