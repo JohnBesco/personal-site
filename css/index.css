@@ -641,14 +641,14 @@ nav a:hover {
 
 .background-graphic1 {
   position: absolute;
-  right: 200px;
-  bottom: 400px;
+  left: 80%;
+  top: 80%;
 }
 
 .background-graphic2 {
   position: absolute;
-  left: 200px;
-  bottom: 400px;
+  left: 10%;
+  bottom: 20%;
 }
 
 .projects-page-container {
@@ -770,6 +770,14 @@ nav a:hover {
   .hero-bg {
     height: 15rem;
     width: 15rem;
+  }
+  .background-graphic1 {
+    width: 12rem;
+    height: 12rem;
+  }
+  .background-graphic2 {
+    width: 12rem;
+    height: 12rem;
   }
   .title-wrapper h1 {
     font-size: 2.25rem;
