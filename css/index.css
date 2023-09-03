@@ -720,7 +720,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  gap: 6px;
+  gap: 0.8ch;
   margin-top: 1em;
 }
 
