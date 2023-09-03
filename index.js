@@ -1,3 +1,11 @@
+const reveals = document.querySelectorAll(".reveal");
+
+reveals.forEach((reveal, index) => {
+  setTimeout(() => {
+    reveal.style.opacity = "1";
+  }, index * 120); //
+});
+
 const navToggle = document.querySelector(".menu-button");
 const nav = document.querySelector("nav");
 let slides = document.querySelectorAll(".slide-container");
