@@ -6,6 +6,20 @@ reveals.forEach((reveal, index) => {
   }, index * 60); //
 });
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+      } else {
+          entry.target.classList.remove('show');
+      }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hiddenEl');
+
+hiddenElements.forEach((el) => observer.observe (el));
+
 const navToggle = document.querySelector(".menu-button");
 const nav = document.querySelector("nav");
 let slides = document.querySelectorAll(".slide-container");

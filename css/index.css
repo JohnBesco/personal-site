@@ -86,6 +86,13 @@
   animation: fadeInLeft 1s ease-out forwards;
 }
 
+.fade-in-left-about {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInLeftAbout 1s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
 .fade-in-left:nth-child(1) {
   animation-delay: 2s;
 }
@@ -112,13 +119,26 @@
     transform: translateX(0);
   }
 }
+@keyframes fadeInLeftAbout {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .fade-in-right {
   opacity: 0;
   transform: translateX(20px);
   animation: fadeInRight 1s ease-out forwards;
 }
 
-@keyframes fadeInRight {
+.fade-in-right-about {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: fadeInRightAbout 1s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeInRightAbout {
   to {
     opacity: 1;
     transform: translateX(0);
@@ -198,6 +218,67 @@
     transform: translateY(0px) translateX(0px);
   }
 }
+.fade-in-up {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: fadeInUp ease-in-out 1s forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 1;
+  }
+}
+.hiddenEl {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.delayAnimation:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.delayAnimation:nth-child(3) {
+  transition-delay: 300ms;
+}
+
+.delayAnimation:nth-child(4) {
+  transition-delay: 400ms;
+}
+
+.delayAnimation:nth-child(5) {
+  transition-delay: 500ms;
+}
+
+.delayAnimation:nth-child(6) {
+  transition-delay: 600ms;
+}
+
+.delayAnimation:nth-child(7) {
+  transition-delay: 700ms;
+}
+
+.delayAnimation:nth-child(8) {
+  transition-delay: 800ms;
+}
+
 @font-face {
   font-family: "Tanker-Regular";
   src: url("../fonts/Tanker-Regular.woff2") format("woff2"), url("../fonts/Tanker-Regular.woff") format("woff"), url("../fonts/Tanker-Regular.ttf") format("truetype");
@@ -743,8 +824,8 @@ nav a:hover {
 
 .image:nth-child(2) img {
   transition: 0.3s ease-in-out;
-  z-index: 1;
   margin-bottom: 2em;
+  z-index: 1;
 }
 
 .image:nth-child(3) img {
@@ -811,7 +892,15 @@ nav a:hover {
   background: linear-gradient(180deg, rgba(35, 37, 38, 0) 0%, rgba(65, 67, 69, 0.35) 100%);
 }
 .about-cta-container h1 {
-  font-size: 2.25rem;
+  font-size: 4rem;
+  margin-bottom: -0.2em;
+}
+.about-cta-container p {
+  font-size: 2rem;
+}
+.about-cta-container button {
+  width: 12.25rem;
+  height: 2.6rem;
 }
 
 @media screen and (max-width: 768px) {

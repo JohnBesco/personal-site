@@ -367,8 +367,8 @@
 
 .image:nth-child(2) img {
   transition: 0.3s ease-in-out;
-  z-index: 1;
   margin-bottom: 2em;
+  z-index: 1;
 }
 
 .image:nth-child(3) img {
@@ -442,7 +442,17 @@
   );
 
   h1 {
-    font-size: $fs-500;
+    font-size: $fs-600;
+    margin-bottom: -0.2em;
+  }
+
+  p {
+    font-size: $fs-400;
+  }
+
+  button {
+    width: $base-btn-width;
+    height: $base-btn-height;
   }
 }
 
