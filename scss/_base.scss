@@ -23,10 +23,11 @@
 
 html,
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
+
 * {
   color: inherit;
   box-sizing: border-box;

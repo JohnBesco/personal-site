@@ -55,7 +55,7 @@
 
 .blur {
   width: 100vw;
-  height: 100vh;
+  height: max-content;
   margin: 0 auto;
   background: rgba(13, 13, 13, 0.3);
   backdrop-filter: blur(60px);
@@ -245,7 +245,7 @@ section {
 .background-graphic1 {
   position: absolute;
   right: 200px;
-  bottom: 0;
+  bottom: 400px;
 }
 
 .container {
@@ -318,6 +318,7 @@ section {
   border: 1px solid red;
   width: fit-content;
   height: fit-content;
+  margin: 5em 3em;
 }
 
 .about-text-wrapper {
@@ -352,6 +353,10 @@ section {
 
 }
 
+.text {
+  font-size: $fs-sm;
+  margin-bottom: 1em;
+}
 
 @media screen and (max-width: 768px) {
   .img-container {
