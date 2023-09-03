@@ -57,14 +57,20 @@
 
 .blur {
   position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
   width:100%;
   height:100%;
-  top:0px;
-  left:0px;
   margin: 0 auto;
   background: rgba(13, 13, 13, 0.3);
   backdrop-filter: blur(60px);
   z-index: 1;
+}
+
+.page-content {
+  z-index: 10;
 }
 
 .img-container {
