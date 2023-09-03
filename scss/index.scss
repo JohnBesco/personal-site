@@ -325,6 +325,34 @@ section {
   width: 50rem;
 }
 
+.about-images-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    border-radius: 10px;
+    position: relative;
+  }
+}
+
+.image:nth-child(1) img {
+  transform: rotate(-15deg);
+  margin-right: -10em;
+}
+
+.image:nth-child(2) img {
+  z-index: 1;
+  margin-bottom: 2em;
+}
+
+.image:nth-child(3) img {
+  transform: rotate(15deg);
+  margin-left: -10em;
+
+}
+
+
 @media screen and (max-width: 768px) {
   .img-container {
     height: 6rem;
