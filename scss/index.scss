@@ -56,8 +56,11 @@
 }
 
 .blur {
-  width: 100vw;
-  height: max-content;
+  position: fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
   margin: 0 auto;
   background: rgba(13, 13, 13, 0.3);
   backdrop-filter: blur(60px);
@@ -155,7 +158,7 @@
   align-items: center;
 
   .projects-title {
-    margin-bottom: 0.3em;
+    margin: 5em 8em;
   }
 }
 
@@ -164,6 +167,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 1.5em;
   gap: 0.5em;
 
   .icons-container {
