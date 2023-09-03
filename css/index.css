@@ -478,6 +478,8 @@ nav a:hover {
 
 .page-content {
   z-index: 10;
+  width: 100vw;
+  height: 100vh;
 }
 
 .img-container {
@@ -659,6 +661,7 @@ nav a:hover {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  padding-top: 5em;
 }
 .projects-page-container .projects-title {
   margin: 5em auto -8em auto;
@@ -705,21 +708,19 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid red;
   width: 50rem;
-  height: 100vh;
-  padding-top: 15em;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 2em;
 }
 
 .about-title-wrapper {
-  border: 1px solid red;
   width: fit-content;
   height: fit-content;
-  margin: 1em;
+  margin: 4em 0 2em 0;
 }
 
 .about-text-wrapper {
-  border: 1px solid blueviolet;
   width: 100%;
 }
 
@@ -752,11 +753,15 @@ nav a:hover {
 .about-text {
   font-size: 1.25rem;
   margin-bottom: 1em;
+  letter-spacing: 0.1rem;
+  line-height: 1.6rem;
 }
 
 .skills-container {
-  border: 1px solid red;
   width: 100%;
+}
+.skills-container h2 {
+  margin: 0.5em 0 0.8em;
 }
 .skills-container .icons-container {
   display: flex;
@@ -767,6 +772,22 @@ nav a:hover {
 .skills-container .icons-container .icon {
   aspect-ratio: 1/1;
   object-fit: contain;
+}
+
+.about-cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 26rem;
+  padding-top: 4em;
+  margin-top: 2em;
+  gap: 2em;
+  background: linear-gradient(180deg, rgba(35, 37, 38, 0) 0%, rgba(65, 67, 69, 0.35) 100%);
+}
+.about-cta-container h1 {
+  font-size: 2.25rem;
 }
 
 @media screen and (max-width: 768px) {
