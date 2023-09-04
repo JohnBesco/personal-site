@@ -960,7 +960,8 @@ nav a:hover {
   }
   .title-wrapper h2 {
     font-size: 1.25rem;
-    width: 12rem;
+    max-width: max-content;
+    margin-bottom: 0.5em;
   }
   .title-wrapper p {
     font-size: 1.25rem;

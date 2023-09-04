@@ -525,7 +525,8 @@
 
     h2 {
       font-size: $fs-sm;
-      width: 12rem;
+      max-width: max-content;
+      margin-bottom: 0.5em;
     }
 
     p {
