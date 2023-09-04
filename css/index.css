@@ -1011,7 +1011,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 2em;
     margin: 0 auto;
   }
   .tech-container .icons-container img {
