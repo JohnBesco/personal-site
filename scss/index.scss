@@ -884,9 +884,10 @@
   .about-text-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.6ch;
+    gap: 1ch;
     padding: 0 2em;
     text-align: center;
+    margin-bottom: 1em;
   }
 
   .about-images-container {
@@ -912,7 +913,7 @@
   .image:nth-child(1) img {
     transform: rotate(-15deg);
     transition: 0.3s ease-in-out;
-    margin-left: 4em;
+    margin-left: 8em;
   }
 
   .image:nth-child(2) img {
@@ -923,11 +924,11 @@
   .image:nth-child(3) img {
     transition: 0.3s ease-in-out;
     transform: rotate(15deg);
-    margin-left: -4em;
+    margin-left: -8em;
   }
 
   .reveal {
-    font-size: $fs-xsm;
+    font-size: $fs-sm;
     text-align: center;
     margin-bottom: -10px;
   }
