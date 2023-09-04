@@ -1,3 +1,19 @@
+let prevScrollPos = window.pageYOffset; // Initialize previous scroll position
+
+window.addEventListener("scroll", () => {
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    // User is scrolling up, so fade in the button
+    document.getElementById("toggle-btn").style.opacity = "1";
+  } else {
+    // User is scrolling down, so fade out the button
+    document.getElementById("toggle-btn").style.opacity = "0";
+  }
+
+  prevScrollPos = currentScrollPos; // Update previous scroll position
+});
+
 const reveals = document.querySelectorAll(".reveal");
 
 reveals.forEach((reveal, index) => {

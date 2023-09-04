@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100px;
@@ -53,9 +53,7 @@ nav ul {
   font-size: $fs-600;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  justify-content: space-between;
-  align-items: stretch;
+  min-height: 100%;
   background-color: $light-bg-color;
 }
 

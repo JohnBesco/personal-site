@@ -393,7 +393,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100px;
@@ -442,9 +442,7 @@ nav ul {
   font-size: 4rem;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  justify-content: space-between;
-  align-items: stretch;
+  min-height: 100%;
   background-color: #18181B;
 }
 
@@ -797,8 +795,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 50rem;
-  height: 100%;
+  max-width: 50rem;
   margin: 0 auto;
   padding-top: 2em;
 }
@@ -903,8 +900,8 @@ nav a:hover {
   justify-content: center;
   flex-direction: column;
   width: 100vw;
-  height: 26rem;
-  padding-top: 4em;
+  max-height: min-content;
+  padding: 4em;
   margin-top: 2em;
   gap: 2em;
   background: linear-gradient(180deg, rgba(35, 37, 38, 0) 0%, rgba(65, 67, 69, 0.35) 100%);
@@ -973,6 +970,10 @@ nav a:hover {
     height: 2rem;
     font-size: 0.85rem;
   }
+  .projects-title {
+    padding-top: 2em;
+    min-width: max-content;
+  }
   .projects-title h1 {
     font-size: 4rem;
   }
@@ -1032,6 +1033,10 @@ nav a:hover {
     font-size: 1.25rem !important;
     width: 10.6875rem !important;
     height: 2rem !important;
+  }
+  .about-title-wrapper {
+    padding-top: 1em;
+    max-width: max-content;
   }
   .about-title-wrapper h1 {
     font-size: 4rem;

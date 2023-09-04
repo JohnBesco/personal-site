@@ -332,8 +332,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 50rem;
-  height: 100%;
+  max-width: 50rem;
   margin: 0 auto;
   padding-top: 2em;
 }
@@ -443,8 +442,8 @@
   justify-content: center;
   flex-direction: column;
   width: 100vw;
-  height: 26rem;
-  padding-top: 4em;
+  max-height: min-content;
+  padding: 4em;
   margin-top: 2em;
   gap: 2em;
   background: linear-gradient(
@@ -545,6 +544,9 @@
   // Projects Page
 
   .projects-title {
+    padding-top: 2em;
+    min-width: max-content;
+
     h1 {
       font-size: $fs-600;
     }
@@ -626,26 +628,29 @@
   // About Page
 
   .about-title-wrapper {
+    padding-top: 1em;
+    max-width: max-content;
+
     h1 {
       font-size: $fs-600;
     }
   }
 
   .about-container {
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100vw;
     height: 100%;
   }
-  
+
   .about-title-wrapper {
     width: fit-content;
     height: fit-content;
     margin: 4em 0 2em 0;
   }
-  
+
   .about-text-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -660,13 +665,13 @@
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 1em;
-  
+
     .image {
       width: 100%;
       height: fit-content;
       border-radius: 10px;
     }
-  
+
     img {
       aspect-ratio: 4/5;
       object-fit: contain;
@@ -674,24 +679,24 @@
       border-radius: 10px;
     }
   }
-  
+
   .image:nth-child(1) img {
     transform: rotate(-15deg);
     transition: 0.3s ease-in-out;
     margin-left: 4em;
   }
-  
+
   .image:nth-child(2) img {
     transition: 0.3s ease-in-out;
     z-index: 1;
   }
-  
+
   .image:nth-child(3) img {
     transition: 0.3s ease-in-out;
     transform: rotate(15deg);
     margin-left: -4em;
   }
-  
+
   .reveal {
     font-size: $fs-xsm;
     text-align: center;
@@ -702,7 +707,7 @@
     padding: 0 2em;
 
     h2 {
-      font-size: $fs-400
+      font-size: $fs-400;
     }
   }
 
@@ -733,5 +738,4 @@
       font-size: $fs-xsm;
     }
   }
-
 }
