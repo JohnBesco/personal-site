@@ -532,7 +532,6 @@
     p {
       font-size: $fs-sm;
       max-width: 16rem;
-      max-height: min-content;
       margin-bottom: 0.2em;
     }
 
@@ -589,6 +588,7 @@
     }
 
     .icons-container {
+      min-width: max-content;
       display: flex;
       align-items: center;
       justify-content: center;

@@ -966,7 +966,6 @@ nav a:hover {
   .title-wrapper p {
     font-size: 1.25rem;
     max-width: 16rem;
-    max-height: min-content;
     margin-bottom: 0.2em;
   }
   .title-wrapper .cta {
@@ -1008,6 +1007,7 @@ nav a:hover {
     font-size: 2rem;
   }
   .tech-container .icons-container {
+    min-width: max-content;
     display: flex;
     align-items: center;
     justify-content: center;
