@@ -362,6 +362,12 @@ p {
   line-height: normal;
 }
 
+img,
+picture,
+video {
+  max-width: 100%;
+}
+
 button {
   display: flex;
   align-items: center;
@@ -635,7 +641,6 @@ nav a:hover {
 }
 
 .projects-container {
-  margin: 6em auto;
   width: fit-content;
   height: max-content;
   display: flex;
@@ -813,10 +818,18 @@ nav a:hover {
 }
 
 .about-images-container {
-  display: flex;
+  width: 100%;
+  height: min-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-bottom: 4em;
+  border: 1px solid red;
+}
+.about-images-container .image {
+  width: 100%;
+  height: fit-content;
 }
 .about-images-container img {
   border-radius: 10px;
@@ -826,19 +839,18 @@ nav a:hover {
 .image:nth-child(1) img {
   transform: rotate(-15deg);
   transition: 0.3s ease-in-out;
-  margin-right: -11em;
+  margin-left: 10em;
 }
 
 .image:nth-child(2) img {
   transition: 0.3s ease-in-out;
-  margin-bottom: 2em;
   z-index: 1;
 }
 
 .image:nth-child(3) img {
   transition: 0.3s ease-in-out;
   transform: rotate(15deg);
-  margin-left: -11em;
+  margin-left: -10em;
 }
 
 .image:nth-child(1):hover img {
@@ -966,6 +978,9 @@ nav a:hover {
   .projects-title h1 {
     font-size: 4rem;
   }
+  .images-container {
+    margin: 0;
+  }
   .images-container img:first-child {
     width: 22rem;
     height: 13rem;
@@ -997,7 +1012,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.2em;
+    gap: 1em;
     margin: 0 auto;
   }
   .tech-container .icons-container img {
@@ -1020,7 +1035,7 @@ nav a:hover {
     height: 2rem !important;
   }
   .about-title-wrapper h1 {
-    font-size: 2.25rem;
+    font-size: 4rem;
   }
   .about-container {
     display: flex;

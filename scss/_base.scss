@@ -88,3 +88,9 @@ p {
   font-weight: 500;
   line-height: normal;
 }
+
+img,
+picture,
+video {
+  max-width: 100%;
+}
