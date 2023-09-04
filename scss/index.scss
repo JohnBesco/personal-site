@@ -526,21 +526,20 @@
     h2 {
       font-size: $fs-sm;
       max-width: max-content;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.2em;
     }
 
     p {
       font-size: $fs-sm;
-      width: 16rem;
-      height: 3rem;
-      margin-bottom: 1.4rem;
+      max-width: 16rem;
+      max-height: min-content;
+      margin-bottom: 0.2em;
     }
 
     .cta {
       width: $sm-btn-width;
       height: $sm-btn-height;
       font-size: $fs-xsm;
-      margin-top: 1.2em;
     }
   }
 
