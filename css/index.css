@@ -1112,6 +1112,9 @@ nav a:hover {
   .about-cta-container h1 {
     font-size: 2rem;
   }
+  .about-cta-container p {
+    font-size: 1.25rem;
+  }
   .about-cta-container button {
     width: 10.6875rem;
     height: 2rem;

@@ -723,6 +723,10 @@
       font-size: $fs-400;
     }
 
+    p {
+      font-size: $fs-sm;
+    }
+
     button {
       width: $sm-btn-width;
       height: $sm-btn-height;
