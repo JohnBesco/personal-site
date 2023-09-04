@@ -1158,17 +1158,9 @@ nav a:hover {
     max-width: 100%;
   }
   .blob {
-    min-width: 30rem;
-    min-height: 30rem;
+    min-width: 20rem;
+    min-height: 20rem;
     animation: blobAnimation 10s infinite ease-in-out;
-  }
-  .background-graphic1 {
-    width: 12rem;
-    height: 12rem;
-  }
-  .background-graphic2 {
-    width: 12rem;
-    height: 12rem;
   }
   .title-wrapper h1 {
     font-size: 4rem;
@@ -1195,5 +1187,58 @@ nav a:hover {
     width: 12.25rem;
     height: 2.6rem;
     font-size: 1.25rem;
+  }
+  .projects-title {
+    min-width: max-content;
+  }
+  .projects-title h1 {
+    font-size: 4rem;
+  }
+  .images-container {
+    border: 1px solid red;
+    position: relative;
+  }
+  .images-container img:first-child {
+    aspect-ratio: 2/1;
+    object-fit: contain;
+  }
+  .images-container img:nth-child(2) {
+    max-width: 10rem;
+    max-height: 12rem;
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+  }
+  .arrow {
+    width: 50px;
+    height: 35px;
+  }
+  .tech-container {
+    width: min-content;
+    height: min-content;
+  }
+  .tech-container h2 {
+    font-size: 2rem;
+  }
+  .tech-container .icons-container {
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 0 auto;
+  }
+  .tech-container .icons-container img {
+    aspect-ratio: 2/1 !important;
+    object-fit: contain;
+  }
+  .overlay h2 {
+    font-size: 1.25rem;
+  }
+  .view-btn {
+    text-align: center;
+    font-size: 1.25rem !important;
+    width: 10.6875rem !important;
+    height: 2rem !important;
   }
 }
