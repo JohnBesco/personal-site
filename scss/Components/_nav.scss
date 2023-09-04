@@ -112,7 +112,7 @@ nav a:hover {
 }
 
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 575px) {
   nav ul {
     font-size: $fs-400;
   }  
@@ -135,5 +135,30 @@ nav a:hover {
   nav a {
     padding: calc(100vh/8) 0.5em;
   }
-
 }
+
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
+  nav ul {
+    font-size: $fs-500;
+  }  
+
+  .btn-outline {
+    width: 80px;
+    height: 80px;
+  }
+
+  #toggle-btn {
+    right: -30px;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav a {
+    padding: calc(100vh/8) 0.5em;
+  }
+}
+

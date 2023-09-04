@@ -496,7 +496,7 @@ nav a:hover {
   border-radius: 53% 47% 43% 57%/51% 39% 61% 49%;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 575px) {
   nav ul {
     font-size: 2rem;
   }
@@ -511,6 +511,26 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+  nav a {
+    padding: 12.5vh 0.5em;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
+  nav ul {
+    font-size: 2.25rem;
+  }
+  .btn-outline {
+    width: 80px;
+    height: 80px;
+  }
+  #toggle-btn {
+    right: -30px;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   nav a {
     padding: 12.5vh 0.5em;
@@ -923,7 +943,7 @@ nav a:hover {
   height: 2.6rem;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 575px) {
   .img-container {
     height: 6rem;
     width: 6rem;
@@ -983,6 +1003,7 @@ nav a:hover {
     font-size: 4rem;
   }
   .images-container {
+    padding-top: 2em;
     margin: 0;
   }
   .images-container img:first-child {
@@ -994,10 +1015,10 @@ nav a:hover {
     height: 8rem;
   }
   #prev {
-    margin-top: 3em;
+    margin-top: 4em;
   }
   #next {
-    margin-top: 3em;
+    margin-top: 4em;
   }
   .arrow {
     width: 30px;
