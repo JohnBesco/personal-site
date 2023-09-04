@@ -508,7 +508,9 @@ nav a:hover {
     right: -30px;
   }
   nav ul {
-    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   nav a {
     padding: 12.5vh 0.5em;
