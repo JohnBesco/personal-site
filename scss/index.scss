@@ -464,7 +464,7 @@
 
 // Media Queries
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .img-container {
     height: 6rem;
     width: 6rem;
@@ -538,19 +538,18 @@
   .projects-title {
     h1 {
       font-size: $fs-600;
-      margin: 1em auto -1em auto;
     }
   }
 
   .images-container {
     img:first-child {
-      width: 22.375rem;
-      height: 13.25rem;
+      width: 22rem;
+      height: 13rem;
     }
 
     img:nth-child(2) {
-      width: 4.8125rem;
-      height: 8.75rem;
+      width: 4rem;
+      height: 8rem;
     }
   }
 
@@ -568,6 +567,10 @@
   }
 
   .tech-container {
+    margin: 0.5em;
+    width: min-content;
+    height: min-content;
+
     h2 {
       margin: 3em 0 0.5em 0;
       font-size: $fs-400;
@@ -577,17 +580,22 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 0.2em;
       margin: 0 auto;
 
       img {
-        aspect-ratio: 1/1;
+        aspect-ratio: 2/1 !important;
         object-fit: contain;
       }
     }
   }
 
-  .projects-page-container {
-    padding: 1em;
+  .slide {
+    padding: 0em 5em;
+  }
+
+  .slide-container {
+    margin: -2em 1em 4em 1em;
   }
 
   .overlay {

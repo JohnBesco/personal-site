@@ -3,7 +3,7 @@ const reveals = document.querySelectorAll(".reveal");
 reveals.forEach((reveal, index) => {
   setTimeout(() => {
     reveal.style.opacity = "1";
-  }, index * 60); //
+  }, index * 30); //
 });
 
 const observer = new IntersectionObserver((entries) => {
