@@ -1057,4 +1057,15 @@ nav a:hover {
     font-size: 0.85rem;
     text-align: center;
   }
+  .skills-container {
+    padding: 0 2em;
+  }
+  .skills-container h2 {
+    font-size: 2rem;
+  }
+  .icons-container .icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
 }

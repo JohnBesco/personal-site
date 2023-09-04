@@ -665,4 +665,21 @@
     font-size: $fs-xsm;
     text-align: center;
   }
+
+  .skills-container {
+    padding: 0 2em;
+
+    h2 {
+      font-size: $fs-400
+    }
+  }
+
+  .icons-container {
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+  }
 }
