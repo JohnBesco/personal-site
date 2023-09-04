@@ -757,13 +757,13 @@ nav a:hover {
 .background-graphic2 {
   position: absolute;
   left: 90%;
-  top: 100%;
+  top: 70%;
 }
 
 .background-graphic3 {
   position: absolute;
-  left: 10%;
-  bottom: 100%;
+  left: 20%;
+  bottom: 40%;
 }
 
 .projects-page-container {
@@ -1159,8 +1159,8 @@ nav a:hover {
     max-width: 100%;
   }
   .blob {
-    min-width: 20rem;
-    min-height: 20rem;
+    min-width: 10rem;
+    min-height: 10rem;
     animation: blobAnimation 10s infinite ease-in-out;
   }
   .title-wrapper h1 {
@@ -1238,5 +1238,93 @@ nav a:hover {
     font-size: 1.25rem !important;
     width: 12.25rem !important;
     height: 2.6rem !important;
+  }
+  .about-title-wrapper {
+    max-width: max-content;
+  }
+  .about-title-wrapper h1 {
+    font-size: 4rem;
+  }
+  .about-container {
+    padding: 0 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-title-wrapper {
+    width: fit-content;
+    height: fit-content;
+    margin: 4em 0 4em 0;
+    padding: 2em 0 4em 0;
+  }
+  .about-text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6ch;
+    padding: 0 2em;
+    text-align: center;
+  }
+  .about-images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .about-images-container .image {
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+  }
+  .about-images-container img {
+    aspect-ratio: 4/5;
+    object-fit: contain;
+    position: relative;
+    border-radius: 10px;
+  }
+  .image:nth-child(1) img {
+    transform: rotate(-15deg);
+    transition: 0.3s ease-in-out;
+    margin-left: 4em;
+  }
+  .image:nth-child(2) img {
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+  }
+  .image:nth-child(3) img {
+    transition: 0.3s ease-in-out;
+    transform: rotate(15deg);
+    margin-left: -4em;
+  }
+  .reveal {
+    font-size: 0.85rem;
+    text-align: center;
+    margin-bottom: -10px;
+  }
+  .skills-container {
+    padding: 0 2em;
+  }
+  .skills-container h2 {
+    font-size: 2rem;
+  }
+  .icons-container {
+    display: flex;
+    align-items: center;
+  }
+  .icons-container .icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  .about-cta-container h1 {
+    font-size: 2.25rem;
+  }
+  .about-cta-container p {
+    font-size: 2rem;
+  }
+  .about-cta-container button {
+    width: 12.25rem;
+    height: 2.6rem;
+    font-size: 1.25rem;
   }
 }
