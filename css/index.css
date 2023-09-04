@@ -847,7 +847,7 @@ nav a:hover {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 4em;
+  margin: 2em 0 4em 0;
 }
 .about-images-container .image {
   width: 100%;
@@ -955,8 +955,8 @@ nav a:hover {
     animation: blobAnimation 10s infinite ease-in-out;
   }
   .fluid {
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 10rem;
   }
   .hero-bg {
     height: 15rem;
@@ -1217,6 +1217,7 @@ nav a:hover {
     height: 35px;
   }
   .tech-container {
+    padding: 0 4em 0 4 gem;
     width: 100%;
   }
   .tech-container h2 {
