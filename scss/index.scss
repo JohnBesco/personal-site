@@ -467,7 +467,6 @@
 // Media Queries (Phones)
 
 @media only screen and (max-width: 575px) {
-
   // Home Page
 
   .img-container {
@@ -739,8 +738,67 @@
   }
 }
 
-
 // Media Queries (Tablets)
 
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
+  // Home Page
+
+  .img-container {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .blob {
+    min-width: 30rem;
+    min-height: 30rem;
+    animation: blobAnimation 10s infinite ease-in-out;
+  }
+
+  // Project Page Background Graphic
+
+  .background-graphic1 {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  // About Page Background Graphic
+
+  .background-graphic2 {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .title-wrapper {
+    h1 {
+      font-size: $fs-600;
+    }
+
+    h1:nth-child(1) {
+      text-align: right;
+      margin-right: -1.75em;
+    }
+
+    h1:nth-child(3) {
+      text-align: left;
+      margin-left: -1.75em;
+    }
+
+    h2 {
+      font-size: $fs-500;
+      max-width: max-content;
+      margin-bottom: 0.3em;
+    }
+
+    p {
+      font-size: $fs-400;
+      max-width: max-content;
+      margin-bottom: 0.3em;
+    }
+
+    .cta {
+      width: $base-btn-width;
+      height: $base-btn-height;
+      font-size: $fs-sm;
+    }
+  }
 }
