@@ -675,11 +675,29 @@
   }
 
   .icons-container {
-
     .icon {
       width: 30px;
       height: 30px;
       object-fit: contain;
     }
   }
+
+  .about-cta-container {
+    padding: 0 2em;
+
+    h1 {
+      font-size: $fs-400;
+    }
+
+    p {
+      font-size: $fs-sm;
+    }
+
+    button {
+      width: $sm-btn-width;
+      height: $sm-btn-height;
+      font-size: $fs-xsm;
+    }
+  }
+
 }

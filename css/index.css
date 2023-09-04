@@ -1068,4 +1068,18 @@ nav a:hover {
     height: 30px;
     object-fit: contain;
   }
+  .about-cta-container {
+    padding: 0 2em;
+  }
+  .about-cta-container h1 {
+    font-size: 2rem;
+  }
+  .about-cta-container p {
+    font-size: 1.25rem;
+  }
+  .about-cta-container button {
+    width: 10.6875rem;
+    height: 2rem;
+    font-size: 0.85rem;
+  }
 }
