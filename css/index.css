@@ -1029,7 +1029,6 @@ nav a:hover {
     flex-direction: column;
     width: 100vw;
     height: 100%;
-    padding-top: 2em;
   }
   .about-title-wrapper {
     width: fit-content;
@@ -1039,29 +1038,23 @@ nav a:hover {
   .about-text-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.8ch;
-    margin-top: 1em;
+    gap: 0.6ch;
+    padding: 0 2em;
+    text-align: center;
   }
   .about-images-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 4em;
+    margin: 1em 0 1.5em 0;
   }
   .about-images-container img {
     width: 10.625rem;
     height: 14.375rem;
   }
-  .image:nth-child(1) img {
-    margin-left: 1em;
-  }
   .image:nth-child(2) img {
     z-index: 1;
-  }
-  .image:nth-child(3) img {
-    margin-right: 1em;
+    margin: 0em 4em;
   }
   .reveal {
-    font-size: 1.25rem;
+    font-size: 0.85rem;
+    text-align: center;
   }
 }
