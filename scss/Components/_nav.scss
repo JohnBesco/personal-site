@@ -52,6 +52,8 @@ nav ul {
   color: $primary-color;
   font-size: $fs-600;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   min-height: 100%;
   background-color: $light-bg-color;
@@ -64,6 +66,7 @@ nav a {
 }
 
 nav li {
+  min-width: 100%;
   border-bottom: 0.5px solid $secondary-color;
   display: flex;
   align-items: center;
@@ -124,7 +127,7 @@ nav a:hover {
   }
 
   nav ul {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   nav a {

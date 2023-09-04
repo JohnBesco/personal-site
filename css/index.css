@@ -441,6 +441,8 @@ nav ul {
   color: #e7e7e7;
   font-size: 4rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   min-height: 100%;
   background-color: #18181B;
@@ -453,6 +455,7 @@ nav a {
 }
 
 nav li {
+  min-width: 100%;
   border-bottom: 0.5px solid #dbdbdb;
   display: flex;
   align-items: center;
@@ -505,7 +508,7 @@ nav a:hover {
     right: -30px;
   }
   nav ul {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   nav a {
     padding: 12.5vh 0.5em;
