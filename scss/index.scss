@@ -45,8 +45,10 @@
 }
 
 .hero-container {
+  border: 1px solid red;
   height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -90,7 +92,15 @@
   z-index: 3;
 }
 
+.socials-container {
+  border: 1px solid rebeccapurple;
+  max-width: min-content;
+  grid-column: 1 / 2;
+  grid-row: 2 / auto;
+}
+
 .title-wrapper {
+  grid-column: 2/3;
   display: grid;
   grid-template-columns: auto min-content auto;
   grid-template-rows: min-content min-content min-content;
@@ -487,7 +497,14 @@
 // Media Queries (Phones)
 
 @media only screen and (max-width: 575px) {
+
   // Home Page
+
+  .hero-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
 
   .img-container {
     height: 6rem;
@@ -762,6 +779,12 @@
 
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
   // Home Page
+
+  .hero-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
 
   .img-container {
     max-height: 100%;
