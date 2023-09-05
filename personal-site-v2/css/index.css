@@ -1067,6 +1067,73 @@ nav a:hover {
     height: 2rem;
     font-size: 0.85rem;
   }
+  .projects-page-container {
+    width: 100vw;
+  }
+  .projects-title {
+    min-width: 100%;
+  }
+  .projects-title h1 {
+    font-size: 2.25rem;
+  }
+  .images-container {
+    padding-top: 2em;
+    margin: 0;
+  }
+  .images-container img:first-child {
+    width: 22rem;
+    height: 13rem;
+  }
+  .images-container img:nth-child(2) {
+    width: 4rem;
+    height: 8rem;
+  }
+  #prev {
+    padding-top: 4em;
+  }
+  #next {
+    padding-top: 4em;
+  }
+  .arrow {
+    width: 30px;
+    height: 25px;
+  }
+  .tech-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .tech-container h2 {
+    font-size: 2rem;
+    max-width: min-content;
+    padding: 3em 0 0.5em 0.2em;
+  }
+  .tech-container .icons-container {
+    border: 1px solid yellow;
+    max-width: max-content;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1em;
+  }
+  .tech-container .icons-container img {
+    aspect-ratio: 2/1 !important;
+    object-fit: contain;
+  }
+  .slide {
+    padding: 0em 5em;
+  }
+  .slide-container {
+    margin: -2em 1em 4em 1em;
+  }
+  .overlay h2 {
+    font-size: 1.25rem;
+  }
+  .view-btn {
+    text-align: center;
+    font-size: 1.25rem !important;
+    width: 10.6875rem !important;
+    height: 2rem !important;
+  }
 }
 @media only screen and (min-width: 415px) and (max-width: 575px) {
   .hero-container {
@@ -1203,10 +1270,10 @@ nav a:hover {
     height: 8rem;
   }
   #prev {
-    margin-top: 4em;
+    margin-top: 3em;
   }
   #next {
-    margin-top: 4em;
+    margin-top: 3em;
   }
   .arrow {
     width: 30px;
