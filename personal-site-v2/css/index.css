@@ -790,7 +790,7 @@ nav a:hover {
 .background-graphic1 {
   position: absolute;
   left: 80%;
-  top: 80%;
+  top: 70%;
 }
 
 .background-graphic2 {
@@ -802,7 +802,7 @@ nav a:hover {
 .background-graphic3 {
   position: absolute;
   left: 20%;
-  bottom: 40%;
+  top: 10%;
 }
 
 .projects-page-container {
@@ -1295,11 +1295,6 @@ nav a:hover {
     height: 7rem;
     width: 7rem;
   }
-  .blob {
-    width: 50px;
-    height: 50px;
-    animation: blobAnimation 10s infinite ease-in-out;
-  }
   .fluid {
     height: 10rem;
     width: 10rem;
@@ -1312,14 +1307,6 @@ nav a:hover {
     width: 10rem;
     height: 2rem;
     font-size: 0.85rem;
-  }
-  .background-graphic1 {
-    width: 12rem;
-    height: 12rem;
-  }
-  .background-graphic2 {
-    width: 12rem;
-    height: 12rem;
   }
   .title-wrapper h1 {
     font-size: 2.25rem;
@@ -1526,11 +1513,6 @@ nav a:hover {
   .img-container {
     max-height: 100%;
     max-width: 100%;
-  }
-  .blob {
-    min-width: 10rem;
-    min-height: 10rem;
-    animation: blobAnimation 10s infinite ease-in-out;
   }
   .title-wrapper h1 {
     font-size: 4rem;

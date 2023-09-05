@@ -299,7 +299,7 @@
 .background-graphic1 {
   position: absolute;
   left: 80%;
-  top: 80%;
+  top: 70%;
 }
 
 // About Page Background Graphic
@@ -313,7 +313,7 @@
 .background-graphic3 {
   position: absolute;
   left: 20%;
-  bottom: 40%;
+  top: 10%;
 }
 
 .projects-page-container {
@@ -899,12 +899,6 @@
     width: 7rem;
   }
 
-  .blob {
-    width: 50px;
-    height: 50px;
-    animation: blobAnimation 10s infinite ease-in-out;
-  }
-
   .fluid {
     height: 10rem;
     width: 10rem;
@@ -919,20 +913,6 @@
     width: 10rem;
     height: 2rem;
     font-size: $fs-xsm;
-  }
-
-  // Project Page Background Graphic
-
-  .background-graphic1 {
-    width: 12rem;
-    height: 12rem;
-  }
-
-  // About Page Background Graphic
-
-  .background-graphic2 {
-    width: 12rem;
-    height: 12rem;
   }
 
   .title-wrapper {
@@ -1197,12 +1177,6 @@
   .img-container {
     max-height: 100%;
     max-width: 100%;
-  }
-
-  .blob {
-    min-width: 10rem;
-    min-height: 10rem;
-    animation: blobAnimation 10s infinite ease-in-out;
   }
 
   .title-wrapper {
