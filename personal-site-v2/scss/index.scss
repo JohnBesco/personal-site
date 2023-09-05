@@ -130,7 +130,6 @@
 
   h1 {
     align-self: center;
-    width: fit-content;
     opacity: 0;
   }
 
@@ -516,16 +515,169 @@
   }
 }
 
-// Media Queries (Phones)
+// Media Queries (Small Phones)
 
-@media only screen and (max-width: 575px) {
-  // Home Page
-
+@media only screen and (max-width: 414px) {
   .hero-container {
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    padding: 1em;
+  }
+
+  .title-wrapper {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: auto min-content auto;
+    grid-template-rows: min-content min-content min-content;
+    height: 50vh;
+    width: 100%;
+
+    h1 {
+      font-size: $fs-400;
+      align-self: center;
+      opacity: 0;
+    }
+
+    h1:nth-child(1) {
+      width: max-content;
+      text-align: right;
+      animation-delay: 0.3s;
+      margin-right: -2em;
+    }
+
+    h1:nth-child(3) {
+      width: max-content;
+      text-align: left;
+      animation-delay: 0.6s;
+      margin-left: -2em;
+      padding-right: 0.5em;
+
+    }
+
+    h2 {
+      width: 10rem;
+      font-size: $fs-sm;
+      justify-self: center;
+      align-self: center;
+      text-align: center;
+      grid-column: 2 / 3;
+      grid-row: 2/ 3;
+      opacity: 0;
+      margin-bottom: 0.2rem;
+      animation-delay: 0.9s;
+    }
+
+    p {
+      justify-self: center;
+      align-self: center;
+      font-size: $fs-sm;
+      text-align: center;
+      grid-column: 2 / 3;
+      grid-row: 3/4;
+      max-width: 15rem;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation-delay: 1.2s;
+    }
+  }
+
+  .socials-container {
+    margin: 4em auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+    padding: 0 2em 0 0.2em;
+    gap: 2em;
+
+    svg {
+      max-width: 1.5rem;
+    }
+  }
+
+  .img-container {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .hero-bg {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .contact-button span {
+    width: 10rem;
+    height: 2rem;
+    font-size: $fs-xsm;
+  }
+}
+
+// Media Queries (Phones)
+
+@media only screen and (min-width: 415px) and (max-width: 575px) {
+  // Home Page
+
+  .hero-container {
+    border: 1px solid rebeccapurple;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100vw;
+  }
+
+  .title-wrapper {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: auto min-content auto;
+    grid-template-rows: min-content min-content min-content;
+    height: 50vh;
+
+    h1 {
+      align-self: center;
+      opacity: 0;
+      min-width: max-content;
+    }
+
+    h1:nth-child(1) {
+      text-align: right;
+      animation-delay: 0.3s;
+      border: 1px solid rebeccapurple;
+      margin-right: -1.8em !important;
+    }
+
+    h1:nth-child(3) {
+      text-align: left;
+      animation-delay: 0.6s;
+      margin-left: -1.8em !important;
+    }
+
+    h2 {
+      justify-self: center;
+      align-self: center;
+      text-align: center;
+      grid-column: 2 / 3;
+      grid-row: 2/ 3;
+      opacity: 0;
+      margin-bottom: 0.2rem;
+      animation-delay: 0.9s;
+    }
+
+    p {
+      justify-self: center;
+      align-self: center;
+      font-size: $fs-400;
+      text-align: center;
+      grid-column: 2 / 3;
+      grid-row: 3/4;
+      width: 20rem;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation-delay: 1.2s;
+    }
   }
 
   .socials-container {
@@ -541,8 +693,8 @@
   }
 
   .img-container {
-    height: 6rem;
-    width: 6rem;
+    height: 7rem;
+    width: 7rem;
   }
 
   .blob {
@@ -820,6 +972,14 @@
     justify-content: center;
     flex-direction: column;
   }
+  .title-wrapper {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: auto min-content auto;
+    grid-template-rows: min-content min-content min-content;
+    width: 100%;
+    height: 50vh;
+  }
 
   .socials-container {
     flex-direction: row;
@@ -831,7 +991,6 @@
       max-width: 2rem;
     }
   }
-
 
   .img-container {
     max-height: 100%;
