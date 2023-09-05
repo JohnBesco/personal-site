@@ -567,7 +567,6 @@ nav a:hover {
 }
 
 .hero-container {
-  border: 1px solid red;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -989,6 +988,17 @@ nav a:hover {
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
+  }
+  .socials-container {
+    margin: 1em auto 0 auto;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+    padding: 0 2.4em 0 0.2em;
+  }
+  .socials-container svg {
+    max-width: 1.5rem;
   }
   .img-container {
     height: 6rem;
@@ -1203,6 +1213,16 @@ nav a:hover {
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
+  }
+  .socials-container {
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+    padding: 0 2.4em 0 0.2em;
+  }
+  .socials-container svg {
+    max-width: 2rem;
   }
   .img-container {
     max-height: 100%;
