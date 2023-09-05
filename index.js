@@ -1,6 +1,6 @@
-const btns = document.querySelectorAll(".btn");
+const contactButtons = document.querySelectorAll(".contact-button");
 
-btns.forEach((btn) => {
+contactButtons.forEach((btn) => {
   btn.addEventListener('mousemove', function(e) {
     const position = btn.getBoundingClientRect();
     const x = e.pageX - position.left - position.width / 2;
@@ -10,7 +10,7 @@ btns.forEach((btn) => {
   });
 });
 
-btns.forEach((btn) => {
+contactButtons.forEach((btn) => {
   btn.addEventListener('mouseout', function(e) {
     btn.children[0].style.transform = "translate(0px, 0px)";
   });
