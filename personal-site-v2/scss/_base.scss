@@ -1,21 +1,17 @@
 // Fonts
 @font-face {
   font-family: "Tanker-Regular";
-  src: url("../fonts/Tanker-Regular.woff2") format("woff2"),
-    url("../fonts/Tanker-Regular.woff") format("woff"),
-    url("../fonts/Tanker-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
+  src: url("/fonts/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.woff2") format("woff2"),
+    url("/fonts/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.woff") format("woff"),
+    url("/fonts/Tanker_Complete/Fonts/WEB/fonts/Tanker-Regular.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Erode-Variable";
-  src: url("../fonts/Erode-Variable.woff2") format("woff2"),
-    url("../fonts/Erode-Variable.woff") format("woff"),
-    url("../fonts/Erode-Variable.ttf") format("truetype");
-  font-weight: 300 700;
-  font-display: swap;
+  src: url("/fonts/Erode_Complete/Fonts/WEB/fonts/Erode-Regular.woff2") format("woff2"),
+    url("/fonts/Erode_Complete/Fonts/WEB/fonts/Erode-Regular.woff") format("woff"),
+    url("/fonts/Erode_Complete/Fonts/WEB/fonts/Erode-Regular.ttf") format("truetype");
   font-style: normal;
 }
 
