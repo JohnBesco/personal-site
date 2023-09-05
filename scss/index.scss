@@ -136,16 +136,36 @@
     opacity: 0;
     animation-delay: 1.2s;
   }
+}
 
-  .home-cta {
-    justify-self: center;
-    grid-column: 2 / 3;
-    margin-top: 0.4em;
-    width: $base-btn-width;
-    height: $base-btn-height;
-    opacity: 0;
-    animation-delay: 1.5s;
-  }
+.btn {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  justify-self: center;
+  grid-column: 2 / 3;
+  margin-top: 0.4em;
+}
+
+.btn span {
+  position: relative;
+  display: inline-block;
+  color: white;
+  width: 14rem;
+  height: 3rem;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: 2px solid #92d0fc;
+  background: #18181b;
+  font-size: $fs-sm;
+  text-decoration: none;
+  transition: transform 0.15s linear;
+}
+
+.btn span:hover {
+  box-shadow: 0px 0px 0.33605px 0px #92d0fc, 0px 0px 0.67209px 0px #92d0fc,
+    0px 0px 2.35233px 0px #92d0fc, 0px 0px 4.70466px 0px #92d0fc,
+    0px 0px 8.06513px 0px #92d0fc, 0px 0px 14.11397px 0px #92d0fc;
 }
 
 // Projects Page
@@ -530,12 +550,6 @@
       max-width: 16rem;
       margin-bottom: 0.2em;
     }
-
-    .cta {
-      width: $sm-btn-width;
-      height: $sm-btn-height;
-      font-size: $fs-xsm;
-    }
   }
 
   // Projects Page
@@ -808,7 +822,6 @@
     img:first-child {
       aspect-ratio: 2/1;
       object-fit: contain;
-      
     }
 
     img:nth-child(2) {
@@ -937,7 +950,6 @@
   .skills-container {
     padding: 0 2em;
 
-
     h2 {
       font-size: $fs-400;
     }
@@ -955,7 +967,6 @@
   }
 
   .about-cta-container {
-
     h1 {
       font-size: $fs-500;
     }

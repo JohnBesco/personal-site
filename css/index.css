@@ -654,14 +654,33 @@ nav a:hover {
   opacity: 0;
   animation-delay: 1.2s;
 }
-.title-wrapper .home-cta {
+
+.btn {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
   justify-self: center;
   grid-column: 2/3;
   margin-top: 0.4em;
-  width: 12.25rem;
-  height: 2.6rem;
-  opacity: 0;
-  animation-delay: 1.5s;
+}
+
+.btn span {
+  position: relative;
+  display: inline-block;
+  color: white;
+  width: 14rem;
+  height: 3rem;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: 2px solid #92d0fc;
+  background: #18181b;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: transform 0.15s linear;
+}
+
+.btn span:hover {
+  box-shadow: 0px 0px 0.33605px 0px #92d0fc, 0px 0px 0.67209px 0px #92d0fc, 0px 0px 2.35233px 0px #92d0fc, 0px 0px 4.70466px 0px #92d0fc, 0px 0px 8.06513px 0px #92d0fc, 0px 0px 14.11397px 0px #92d0fc;
 }
 
 .projects-container {
@@ -990,11 +1009,6 @@ nav a:hover {
     font-size: 1.25rem;
     max-width: 16rem;
     margin-bottom: 0.2em;
-  }
-  .title-wrapper .cta {
-    width: 10.6875rem;
-    height: 2rem;
-    font-size: 0.85rem;
   }
   .projects-title {
     padding-top: 2em;
