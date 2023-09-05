@@ -150,7 +150,7 @@
 .contact-button span {
   position: relative;
   display: inline-block;
-  color: white;
+  color: $primary-color;
   width: 14rem;
   height: 3rem;
   padding: 0.5em 1em;
@@ -508,6 +508,12 @@
   .hero-bg {
     height: 15rem;
     width: 15rem;
+  }
+
+  .contact-button span {
+    width: 10rem;
+    height: 2rem;
+    font-size: $fs-xsm;
   }
 
   // Project Page Background Graphic
