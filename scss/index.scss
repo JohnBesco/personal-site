@@ -49,6 +49,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -93,10 +94,26 @@
 }
 
 .socials-container {
-  border: 1px solid rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
   max-width: min-content;
   grid-column: 1 / 2;
-  grid-row: 2 / auto;
+  grid-row: 1/2;
+  padding-top: 20em;
+  align-self: center;
+  justify-self: center;
+
+  svg:hover {
+    filter: drop-shadow(0px 0px 0.06412500143051147px #7ac4fc)
+      drop-shadow(0px 0px 0.12825000286102295px #7ac4fc)
+      drop-shadow(0px 0px 0.4488750100135803px #7ac4fc)
+      drop-shadow(0px 0px 0.8977500200271606px #7ac4fc)
+      drop-shadow(0px 0px 1.5390000343322754px #7ac4fc)
+      drop-shadow(0px 0px 2.6932499408721924px #7ac4fc);
+  }
 }
 
 .title-wrapper {
@@ -497,7 +514,6 @@
 // Media Queries (Phones)
 
 @media only screen and (max-width: 575px) {
-
   // Home Page
 
   .hero-container {

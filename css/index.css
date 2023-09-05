@@ -571,6 +571,7 @@ nav a:hover {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -615,10 +616,20 @@ nav a:hover {
 }
 
 .socials-container {
-  border: 1px solid rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
   max-width: min-content;
   grid-column: 1/2;
-  grid-row: 2/auto;
+  grid-row: 1/2;
+  padding-top: 20em;
+  align-self: center;
+  justify-self: center;
+}
+.socials-container svg:hover {
+  filter: drop-shadow(0px 0px 0.0641250014px #7ac4fc) drop-shadow(0px 0px 0.1282500029px #7ac4fc) drop-shadow(0px 0px 0.44887501px #7ac4fc) drop-shadow(0px 0px 0.89775002px #7ac4fc) drop-shadow(0px 0px 1.5390000343px #7ac4fc) drop-shadow(0px 0px 2.6932499409px #7ac4fc);
 }
 
 .title-wrapper {
