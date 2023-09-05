@@ -335,7 +335,7 @@ hr {
 
 h1 {
   color: #e7e7e7;
-  font-family: Tanker;
+  font-family: "Tanker-Regular";
   font-size: 6rem;
   font-style: normal;
   font-weight: 400;
@@ -346,7 +346,7 @@ h1 {
 
 h2 {
   color: #e7e7e7;
-  font-family: Tanker;
+  font-family: "Tanker-Regular";
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 400;
@@ -356,7 +356,7 @@ h2 {
 
 p {
   color: #dbdbdb;
-  font-family: Erode;
+  font-family: "Erode-Variable";
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -586,7 +586,23 @@ nav a:hover {
   height: 100%;
   margin: 0 auto;
   background: rgba(13, 13, 13, 0.3);
+  z-index: 1;
+}
+
+.blur::before {
+  content: "";
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
   z-index: 1;
 }
 
