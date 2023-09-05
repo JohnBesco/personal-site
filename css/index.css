@@ -626,6 +626,10 @@ nav a:hover {
   padding-top: 20em;
   align-self: center;
   justify-self: center;
+  animation-delay: 1.4s;
+}
+.socials-container svg {
+  transition: filter 0.2s ease-in-out;
 }
 .socials-container svg:hover {
   filter: drop-shadow(0px 0px 0.0641250014px #7ac4fc) drop-shadow(0px 0px 0.1282500029px #7ac4fc) drop-shadow(0px 0px 0.44887501px #7ac4fc) drop-shadow(0px 0px 0.89775002px #7ac4fc) drop-shadow(0px 0px 1.5390000343px #7ac4fc) drop-shadow(0px 0px 2.6932499409px #7ac4fc);

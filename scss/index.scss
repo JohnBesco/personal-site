@@ -104,6 +104,11 @@
   padding-top: 20em;
   align-self: center;
   justify-self: center;
+  animation-delay: 1.4s;
+
+  svg {
+    transition: filter 0.2s ease-in-out;
+  }
 
   svg:hover {
     filter: drop-shadow(0px 0px 0.06412500143051147px #7ac4fc)
