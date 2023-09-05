@@ -666,7 +666,6 @@
     }
 
     .icons-container {
-      border: 1px solid yellow;
       max-width: max-content;
       display: flex;
       justify-content: center;
@@ -825,7 +824,6 @@
   // Home Page
 
   .hero-container {
-    border: 1px solid rebeccapurple;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -849,7 +847,6 @@
     h1:nth-child(1) {
       text-align: right;
       animation-delay: 0.3s;
-      border: 1px solid rebeccapurple;
       margin-right: -1.8em !important;
     }
 

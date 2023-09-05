@@ -1108,7 +1108,6 @@ nav a:hover {
     padding: 3em 0 0.5em 0.2em;
   }
   .tech-container .icons-container {
-    border: 1px solid yellow;
     max-width: max-content;
     display: flex;
     justify-content: center;
@@ -1231,7 +1230,6 @@ nav a:hover {
 }
 @media only screen and (min-width: 415px) and (max-width: 575px) {
   .hero-container {
-    border: 1px solid rebeccapurple;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -1253,7 +1251,6 @@ nav a:hover {
   .title-wrapper h1:nth-child(1) {
     text-align: right;
     animation-delay: 0.3s;
-    border: 1px solid rebeccapurple;
     margin-right: -1.8em !important;
   }
   .title-wrapper h1:nth-child(3) {
