@@ -789,7 +789,7 @@ nav a:hover {
 
 .background-graphic1 {
   position: absolute;
-  left: 80%;
+  left: 65%;
   top: 70%;
 }
 
@@ -1064,9 +1064,14 @@ nav a:hover {
     height: 15rem;
     width: 15rem;
   }
+  .contact-button {
+    display: grid;
+  }
   .contact-button span {
+    align-self: center;
+    justify-content: center;
     width: 10rem;
-    height: 2rem;
+    height: 2.2rem;
     font-size: 0.85rem;
   }
   .projects-page-container {
@@ -1277,16 +1282,17 @@ nav a:hover {
     grid-column: 2/3;
     grid-row: 3/4;
     width: 20rem;
-    margin-bottom: 1rem;
     opacity: 0;
     animation-delay: 1.2s;
   }
   .socials-container {
-    margin: 1em auto 0 auto;
+    margin: -2em auto 0 auto;
+    display: flex;
     flex-direction: row;
     align-self: center;
     justify-self: center;
     padding: 0 2.4em 0 0.2em;
+    gap: 2em;
   }
   .socials-container svg {
     max-width: 1.5rem;
@@ -1303,9 +1309,14 @@ nav a:hover {
     height: 15rem;
     width: 15rem;
   }
+  .contact-button {
+    display: grid;
+  }
   .contact-button span {
+    align-self: center;
+    justify-self: center;
     width: 10rem;
-    height: 2rem;
+    height: 2.2rem;
     font-size: 0.85rem;
   }
   .title-wrapper h1 {
@@ -1327,7 +1338,7 @@ nav a:hover {
   .title-wrapper p {
     font-size: 1.25rem;
     max-width: 16rem;
-    margin-bottom: 0.2em;
+    margin-bottom: -4em;
   }
   .projects-title {
     padding-top: 2em;
